@@ -1,0 +1,175 @@
+<header class="container-fluid">
+    <nav class="navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-10">
+                    <a class="nav-link p-1" href="https://argentinaprograma.inti.gob.ar/" target="_blank">
+                        <img id="logo_img" class="rounded float-start"
+                            src="https://argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/logo/1661403264/APLogo-20-20.png"
+                            alt="Logo Argentina Programa">
+                    </a>
+                </div>
+                <div class="col-sm-2">
+                    <ul class="navbar-nav flex-row justify-content-md-end">
+                        <!-- Linkedin -->
+                        <li>
+                            <a class="nav-link p-1" href="https://www.linkedin.com/in/arianaosunavargas/"
+                                target="_blank">
+                                <button style="margin-top: 20px" type="button" class="btn btn-dark me-md-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                        fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z">
+                                        </path>
+                                    </svg>
+                                </button>
+                            </a>
+                        </li>
+                        <!-- Github -->
+                        <li>
+                            <a class="nav-link p-1" href="https://github.com/ariana-luz" target="_blank">
+                                <button style="margin-top: 20px" type="button" class="btn btn-dark me-md-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                        fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z">
+                                        </path>
+                                    </svg>
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link p-1" href="#">
+                                <button style="margin-top: 20px" type="button" class="btn btn-dark me-md-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                        fill="currentColor" class="bi bi-escape" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8.538 1.02a.5.5 0 1 0-.076.998 6 6 0 1 1-6.445 6.444.5.5 0 0 0-.997.076A7 7 0 1 0 8.538 1.02Z">
+                                        </path>
+                                        <path
+                                            d="M7.096 7.828a.5.5 0 0 0 .707-.707L2.707 2.025h2.768a.5.5 0 1 0 0-1H1.5a.5.5 0 0 0-.5.5V5.5a.5.5 0 0 0 1 0V2.732l5.096 5.096Z">
+                                        </path>
+                                    </svg>
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<!--HEADER OK!-->
+
+
+<section class="container-fluid">
+    <div class="card mat_card">
+        <div id="banner">
+            <img id="avatar"
+                [src]="miPortfolio.backImage"
+                alt="Banner">
+            <button type="button" class="edit btn btn-edit btn-right" onclick="cambiar_foto_banner()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                    class="bi bi-pencil-square" viewBox="0 0 16 16">
+                    <path
+                        d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                    <path fill-rule="evenodd"
+                        d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                </svg>
+            </button>
+        </div>
+        <div class="row">
+            <div class="col-8"></div>
+            <div class="col-4">
+                <div>
+                    <input id="edit_foto_banner" type="file" onchange="showFile(this)" style="display:none">
+                </div>
+            </div>
+        </div>
+        <div style="padding: 10px">
+            <img id="perfil" class="profile_img"
+            [src]="miPortfolio.image"
+            alt="Foto de Perfil">
+            <button type="button" class="btn btn-edit btn-right" onclick="cambiar_foto_perfil()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                    class="bi bi-pencil-square" viewBox="0 0 16 16">
+                    <path
+                        d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                    <path fill-rule="evenodd"
+                        d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                </svg>
+            </button>
+        </div>
+        <div>
+            <input id="edit_foto_perfil" type="file" onchange="showFile5(this)" style="display:none">
+        </div>
+    </div>
+</section>
+
+<section class="card mat_card">
+    <div class="container-fluid">
+        <div class="row">
+            <div id="info_data" class="col-8">
+                <h1 id="info_name">{{miPortfolio.name}}</h1>
+                <p id="info_profession">{{miPortfolio.position}}</p>
+                <p id="info_location">{{miPortfolio.location}}</p>
+                <button class="btn btn-primary" onclick="mostrar_contacto()">Información de contacto</button>
+                <input id="contacto" class="form-control" type="text" value="Email: arianaosunavargas92@gmail.com"
+                    aria-label="readonly input example" readonly style="display:none">
+            </div>
+            <div id="info_details" class="col-4 rounded float-end">
+                <button type="button" class="btn btn-edit btn-right" style="display:auto" onclick="cambiar_data()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-pencil-square" viewBox="0 0 16 16">
+                        <path
+                            d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                        <path fill-rule="evenodd"
+                            d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                    </svg>
+                </button>
+                <ul style="list-style: none">
+                    <li>
+                        <a href="https://www.penguinlibros.com/" target="_blank">
+                            <img id="avatar3"
+                                src="https://www.penguinlibros.com/ar/img/penguinlibros-ar-logo-16608551614.jpg"
+                                alt="Logo Penguin">
+                            <h6 id="info_company">Penguin Random House Grupo Editorial</h6>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.uba.ar/" target="_blank">
+                            <img id="avatar4"
+                                src="https://media-exp1.licdn.com/dms/image/C4E0BAQF-QztqGXBokQ/company-logo_200_200/0/1519861386584?e=1672272000&v=beta&t=7QphHHUoxXpGGm2W0gDH-3nwaF-5iMM-3lE3q1xcCRY"
+                                alt="Logo UBA">
+                            <h6 id="info_school">Universidad de Buenos Aires</h6>
+                        </a>
+                    </li>
+                </ul>
+                <div id="edit-data" style="display:none">
+                    <div class="row">
+                        <div class="col-sm-2">
+            
+                                <button  class="btn btn-primary" onclick="cambiar_foto_companies()" style="display:auto">Edit Company</button>
+                                <input id="edit_foto3" type="file" onchange="showFile3(this)" style="display:none">
+                                <br>
+                                <button class="btn btn-primary" onclick="cambiar_foto_schools()" style="display:auto">Edit University</button>
+                                <input id="edit_foto4" type="file" onchange="showFile4(this)" style="display:none">
+                        
+                            <label for=" exampleFormControlInput1" class="form-label"></label>
+                            <input type="text" oninput="myFunction6(this.value)">
+                            <label for="exampleFormControlInput1" class="form-label"></label>
+                            <input type="text" oninput="myFunction7(this.value)">
+                            <label for="exampleFormControlInput1" class="form-label"></label>
+                            <input type="text" oninput="myFunction8(this.value)">
+                            <label for="exampleFormControlInput1" class="form-label"></label>
+                            <input type="text" oninput="myFunction9(this.value)">
+                            <label for="exampleFormControlInput1" class="form-label"></label>
+                            <input type="text" oninput="myFunction10(this.value)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--BANNER Y PERFIL OK!-->

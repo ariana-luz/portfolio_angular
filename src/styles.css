@@ -1,1 +1,222 @@
-/* You can add global styles to this file, and also import other style files */
+/*Selector universal*
+* {
+    background-color:blueviolet
+}
+*/
+
+/*Selector de tipo o etiqueta
+h1 {
+    color:black
+}
+h2 {
+    color:black
+}
+h3 {
+    color:black
+}
+*/
+
+/*Selector descendente*/
+p span{color:red;}
+h1 span{color:black;}
+
+/*Selector class*/
+.destacado{color:blue}
+/*Se interpreta como cualquier elemento de la página cuyo atributo de clase sea igual a *destacado*/
+
+/*Combinanción del selector de tipo y el selector de clase*/
+p.destacado{color:orange}
+
+/*Selectores de ID
+Permite seleccionar un elemento de la página a través del valor de su atributo id*/
+#destacado{color:red}
+p#aviso{color:blue}
+
+/*Selectores avanzados: Se utiliza para seleccionar un elemento que es hijo directo de otro elemento y se indica mediante el "signo de mayor que" (>)*/
+p>a{color:red}
+
+/*Dimensiones de las cajas*/
+#lateral{width: 200px;}
+#cabecera{height: 60px;}
+
+div img{
+    height: 70px;
+    width: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10pxm;
+}
+/*alternativa: div img {margin: 0.5em, 0.5em,0.5em,1em;}*/
+
+body{
+    padding: 2em;
+}
+/*todos los rellenos valen 2em*/
+
+body{
+    padding: 1 em 2em;
+}
+/*Superior e inferior=1em, izquierdo y derecho=2em*/
+body{
+    padding: 1 em 2em 3em;
+}
+/*Superior=1em, derecho=2em, inferior=3em, izquierdo=2em*/
+body{
+    padding: 1 em 2em 3em 4em;
+}
+/*Superior=1em, derecho=2em, inferior=3em, izquierdo=4em*/
+
+/*
+
+font-family se utiliza para cambiar la cara de una fuente.
+font-style se usa para hacer una fuente en cursiva u oblicua.
+font-variant se utiliza para crear un efecto de versalitas.
+font-weight se utiliza para aumentar o disminuir la negrita o la luz de una fuente.
+font-size se utiliza para aumentar o disminuir el tamaño de una fuente.
+font se utiliza como forma abreviada para especificar otras propiedades de fuente.
+*/
+
+.mat_card {
+    border-radius: 32px;
+    margin: 20px 10px 10px 10px;
+    padding: 50px;
+    border-color: blueviolet;
+}
+
+#avatar {
+    width: 100%;
+    height: 100%;
+}
+
+div#banner img {
+    width: 100%;
+    height: 100%;
+}
+
+.profile_img {
+    border-radius: 50%;
+    width: 152px;
+    height: 152px;
+    margin-top: -150px;
+    z-index: 1;
+}
+.edit {
+    margin-top: -58%;
+    margin-left: 99%;
+}
+
+div#info_data{
+    color: black;
+    margin-top: 0;
+    margin-left: 0;
+    font-size: larger;
+}
+
+div#info_data img {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    margin-left: -50px;
+}
+
+div#info_details{
+    align-self: center;
+    vertical-align: baseline;
+    border-radius: 100%;
+    margin-top: -15%;
+    margin-left: 65%;
+}
+
+div#info_details li a{
+    color: blackt;
+    display: flex;
+}
+
+div#info_details li {
+    color: black;
+    display: flex;
+}
+
+div#info_details button {
+    display: flex;
+    text-decoration: flex;
+    margin-left: 350px;
+}
+
+div#info_details li a img {
+    width: 50px;
+    height: 50px;
+    margin-top: -10px;
+    margin-right: 10px;
+}
+#experiencia{
+    display:flex;
+    margin-top: 1rem;
+}
+#botoncito2{
+    display:flex;
+    margin-top: 0.5rem;
+}
+
+#botoncito3{
+    display:flex;
+    margin-right: 5rem;
+}
+#logo_img{
+    width: 15%;
+    height: 15%;
+}
+div#informacion{
+    margin-top: 10px;
+    margin-left: 0;
+}
+
+div#informacion ul {
+    margin-top: 20px;
+    margin-left: 0;
+}
+
+div#informacion li a{
+    display: flex;
+    color: black;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+div#informacion li h4 {
+    display: flex;
+    color: black;
+    margin-top: -100px;
+    margin-left: 120px;
+}
+
+div#informacion li h5 {
+    color: black;
+    display: flex;
+    margin-top: 0;
+    margin-left: 120px;
+}
+
+div#informacion li p {
+    color: black;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 120px;
+}
+
+div#informacion li img {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: -100px;
+}
+
+div#editar_experiencia{
+    display:flex;
+    margin-right: 5rem;
+}
+#botoncito{
+    display:flex;
+    margin-right: 10%;
+}

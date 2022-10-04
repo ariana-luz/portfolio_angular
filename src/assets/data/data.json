@@ -1,0 +1,68 @@
+{
+	"name": "Ariana Osuna Vargas",
+	"backImage": "https://media-exp1.licdn.com/dms/image/C4D16AQFoUceXro0LAg/profile-displaybackgroundimage-shrink_350_1400/0/1614458133264?e=1669852800&v=beta&t=ghqzqomjdBk2yCNRCRgA3DEDYFtwaYTAuYmlNIpimsg",
+	"image": "https://media-exp1.licdn.com/dms/image/C4D03AQGprUkrN0t3lQ/profile-displayphoto-shrink_800_800/0/1660605594052?e=1669852800&v=beta&t=HIKzyoPlRqTejJFlIqQUACMZteZ-xOEA-PGYkjOCt3g",
+	"position": "Editora",
+	"company": {
+		"name": "Penguin Random House",
+		"img": "https://www.penguinlibros.com/ar/img/penguinlibros-ar-logo-16608551614.jpg",
+		"url": "https://www.penguinlibros.com/"
+	},
+
+	"school": {
+		"name": "Universidad de Buenos Aires",
+		"img": "",
+		"url": "#"
+	},
+
+	"location": "Buenos Aires, Argentina",
+	"about": "Licenciada en Comunicación Social",
+
+	"experience": [{
+			"position": "Auxiliar de Producción de audiolibros",
+			"company": "Penguin Random House",
+			"img": "https://www.penguinlibros.com/ar/img/penguinlibros-ar-logo-16608551614.jpg",
+			"start": "oct 2021",
+			"end": "actualidad",
+			"timeElapsed": "2 años"
+		},
+		{
+			"position": "Ejecutiva de Cuentas",
+			"company": "Entercomm",
+			"img": "https://media-exp1.licdn.com/dms/image/C560BAQGRSJmvYUbJdQ/company-logo_200_200/0/1624048133510?e=1672272000&v=beta&t=BCuJZmhk8qYqQHjy1qKuHT0p5r4nTDJsrnjxsYNTBxc",
+			"start": "jul 2021",
+			"end": "oct 2021",
+			"timeElapsed": "3 meses"
+		}
+	],
+
+	"educacion": [{
+			"school": "Universidad de Buenos Aires",
+			"title": "Editora",
+			"img": "",
+			"career": "Edición",
+			"start": "2017",
+			"end": "2022"
+		},
+		{
+			"school": "Educación IT",
+			"title": "Marketing Digital",
+			"img": "",
+			"career": "Introducción al Marketing Digital",
+			"start": "2012",
+			"end": "2017"
+		},
+		{
+			"school": "Universidad Nacional de Moreno",
+			"title": "Licenciada en Comunicación Social",
+			"img": "",
+			"career": "Licenciatura en Comunicación Social",
+			"start": "2012",
+			"end": "2017"
+		}
+	],
+
+	"proyectos": [{
+		"name": "mi portfolio"
+	}]
+}
