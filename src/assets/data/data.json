@@ -29,17 +29,33 @@
 		{
 			"position": "Ejecutiva de Cuentas",
 			"company": "Entercomm",
-			"img": "https://media-exp1.licdn.com/dms/image/C560BAQGRSJmvYUbJdQ/company-logo_200_200/0/1624048133510?e=1672272000&v=beta&t=BCuJZmhk8qYqQHjy1qKuHT0p5r4nTDJsrnjxsYNTBxc",
+			"img": "https://media-exp1.licdn.com/dms/image/C560BAQGRSJmvYUbJdQ/company-logo_200_200/0/1624048133510?e=1672876800&v=beta&t=Bj1ZvH-dbXOpm5EjD9IsNJkbXGhhHyncpi8CbB2gtbw",
 			"start": "jul 2021",
 			"end": "oct 2021",
 			"timeElapsed": "3 meses"
+		},
+		{
+			"position": "Consultora en Comunicaciones",
+			"company": "BINIT",
+			"img": "https://media-exp1.licdn.com/dms/image/D4D0BAQHOk44dlb5oqg/company-logo_200_200/0/1656608647092?e=1672876800&v=beta&t=-AIXAUtDQwBJ980hfsSkwMsxCv4MT-2LCMJSMFCcsfQ",
+			"start": "sep 2019",
+			"end": "sep 2021",
+			"timeElapsed": "2 años"
+		},
+		{
+			"position": "Asistente comercial",
+			"company": "ITBA",
+			"img": "https://media-exp1.licdn.com/dms/image/C560BAQERO44d80vFIg/company-logo_200_200/0/1519867420254?e=1672876800&v=beta&t=sx4YCA8FRb4V4CEmnqQhS3YAznYUm3P9pRvx1hLhV_c",
+			"start": "sep 2017",
+			"end": "sep 2019",
+			"timeElapsed": "2 años"
 		}
 	],
 
-	"educacion": [{
+	"education": [{
 			"school": "Universidad de Buenos Aires",
 			"title": "Editora",
-			"img": "",
+			"img": "https://media-exp1.licdn.com/dms/image/C4E0BAQF-QztqGXBokQ/company-logo_200_200/0/1519861386584?e=1672876800&v=beta&t=vXaH73PjY4NuyATDFWiIoCWitjLgHURAXm6FmhK-Rww",
 			"career": "Edición",
 			"start": "2017",
 			"end": "2022"
@@ -47,7 +63,7 @@
 		{
 			"school": "Educación IT",
 			"title": "Marketing Digital",
-			"img": "",
+			"img": "https://media-exp1.licdn.com/dms/image/C4D0BAQHWD6W0Nbd8sw/company-logo_200_200/0/1647956251519?e=1672876800&v=beta&t=2-03w_smEj6Tpc_5wEAL9gNrIJo0lj7q6hcvP3Rm5wI",
 			"career": "Introducción al Marketing Digital",
 			"start": "2012",
 			"end": "2017"
@@ -55,10 +71,10 @@
 		{
 			"school": "Universidad Nacional de Moreno",
 			"title": "Licenciada en Comunicación Social",
-			"img": "",
+			"img": "https://media-exp1.licdn.com/dms/image/C4E0BAQGjbYHYBHqBbA/company-logo_200_200/0/1642946584873?e=1672876800&v=beta&t=ZUdKZhwqp9xLJpnxagzRIsaSyvfMx5_a4vWQ4hoD65s",
 			"career": "Licenciatura en Comunicación Social",
-			"start": "2012",
-			"end": "2017"
+			"start": "2021",
+			"end": "2021"
 		}
 	],
 

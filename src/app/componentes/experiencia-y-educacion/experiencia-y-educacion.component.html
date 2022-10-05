@@ -73,7 +73,7 @@
                         <label for="exampleFormControlInput1" class="form-label"></label>
                         <input type="text" class="form-control" id="exampleFormControlInput6"
                             oninput="myFunction14(this.value)" placeholder="Período">
-                        <button onclick="cambiar_foto_company()" style="display:auto">edit foto</button>
+                        <button onclick="cambiar_foto_company2()" style="display:auto">edit foto</button>
                         <div>
                             <input id="edit_foto6" type="file" onchange="showFile6(this)" style="display:none">
                         </div>
@@ -83,143 +83,14 @@
                 </div>
                 <li *ngFor="let experiencia of experienciaList">
                     <div id="informacion">
-                        <a href="https://www.penguinlibros.com/" target="_blank">
+                        <a href={{experiencia.url}} target="_blank">
                             <img id="avatar20"
-                                [src]="experiencia.img">
+                            [src]="experiencia.img">
                         </a>
                         <h4 id="company1">{{experiencia.company}}</h4>
                         <h5 id="position1">{{experiencia.position}}</h5>
                         <p id="period1"><time>{{experiencia.start}}</time> - <time>{{experiencia.end}}</time></p>
                     </div>
-                </li>
-                <div class="row">
-                    <div class="col-8"></div>
-                    <div class="col-4">
-                        <button type="button" class="btn btn-edit btn-right" style="display:auto"
-                            onclick="edit_experiencia()">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                                class="bi bi-pencil-square" viewBox="0 0 16 16">
-                                <path
-                                    d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
-                                <path fill-rule="evenodd"
-                                    d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-                <div>
-                    <div id="editar_experiencia" class="mb-3" style="display:none">
-                        <label for="exampleFormControlInput1" class="form-label"></label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1"
-                            oninput="myFunction3(this.value)" placeholder="Compañía">
-                        <label for="exampleFormControlInput1" class="form-label"></label>
-                        <input type="text" class="form-control" id="exampleFormControlInput2"
-                            oninput="myFunction4(this.value)" placeholder="Puesto">
-                        <label for="exampleFormControlInput1" class="form-label"></label>
-                        <input type="text" class="form-control" id="exampleFormControlInput3"
-                            oninput="myFunction5(this.value)" placeholder="Período">
-                        <button onclick="cambiar_foto_company20()" style="display:auto">edit foto</button>
-                        <div>
-                            <input id="edit_foto20" type="file" onchange="showFile20(this)" style="display:none">
-                        </div>
-                        <button class="btn btn-primary" type="submit" onclick="guardar_experiencia()">Guardar
-                            experiencia</button>
-                    </div>
-                </div>
-                <li>
-                    <a href="https://entercommla.com/" target="_blank">
-                        <img src="https://media-exp1.licdn.com/dms/image/C560BAQGRSJmvYUbJdQ/company-logo_200_200/0/1624048133510?e=1672272000&v=beta&t=BCuJZmhk8qYqQHjy1qKuHT0p5r4nTDJsrnjxsYNTBxc"
-                            alt="Logo Entercomm">
-                    </a>
-                    <h4>Entercomm</h4>
-                    <h5>Ejecutiva de cuentas</h5>
-                    <p>jul. 2021 - oct. 2021 · 4 meses</p>
-                </li>
-                <div class="row">
-                    <div class="col-8"></div>
-                    <div class="col-4">
-                        <button type="button" class="btn btn-edit btn-right" style="display:auto"
-                            onclick="edit_experiencia()">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                                class="bi bi-pencil-square" viewBox="0 0 16 16">
-                                <path
-                                    d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
-                                <path fill-rule="evenodd"
-                                    d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-                <div>
-                    <div id="editar_experiencia" class="mb-3" style="display:none">
-                        <label for="exampleFormControlInput1" class="form-label"></label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1"
-                            oninput="myFunction3(this.value)" placeholder="Compañía">
-                        <label for="exampleFormControlInput1" class="form-label"></label>
-                        <input type="text" class="form-control" id="exampleFormControlInput2"
-                            oninput="myFunction4(this.value)" placeholder="Puesto">
-                        <label for="exampleFormControlInput1" class="form-label"></label>
-                        <input type="text" class="form-control" id="exampleFormControlInput3"
-                            oninput="myFunction5(this.value)" placeholder="Período">
-                        <button onclick="cambiar_foto_company()" style="display:auto">edit foto</button>
-                        <div>
-                            <input id="edit_foto2" type="file" onchange="showFile2(this)" style="display:none">
-                        </div>
-                        <button class="btn btn-primary" type="submit" onclick="guardar_experiencia()">Guardar
-                            experiencia</button>
-                    </div>
-                </div>
-                <li>
-                    <a href="https://binit.tech/" target="_blank">
-                        <img src="https://media-exp1.licdn.com/dms/image/D4D0BAQHOk44dlb5oqg/company-logo_200_200/0/1656608647092?e=1672272000&v=beta&t=AYcamxf4ecvDMBMwsxdgMxrqFGN-hWfDejCfKn2x6ZE"
-                            alt="Logo Binit">
-                    </a>
-                    <h4>Binit</h4>
-                    <h5>Consultora de Comunicaciones</h5>
-                    <p>sept. 2019 - jul. 2021 · 1 año y 11 meses</p>
-                </li>
-                <li>
-                    <div class="row">
-                        <div class="col-8"></div>
-                        <div class="col-4">
-                            <button type="button" class="btn btn-edit btn-right" style="display:auto"
-                                onclick="edit_experiencia()">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                                    class="bi bi-pencil-square" viewBox="0 0 16 16">
-                                    <path
-                                        d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
-                                    <path fill-rule="evenodd"
-                                        d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                    <div>
-                        <div id="editar_experiencia" class="mb-3" style="display:none">
-                            <label for="exampleFormControlInput1" class="form-label"></label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1"
-                                oninput="myFunction3(this.value)" placeholder="Compañía">
-                            <label for="exampleFormControlInput1" class="form-label"></label>
-                            <input type="text" class="form-control" id="exampleFormControlInput2"
-                                oninput="myFunction4(this.value)" placeholder="Puesto">
-                            <label for="exampleFormControlInput1" class="form-label"></label>
-                            <input type="text" class="form-control" id="exampleFormControlInput3"
-                                oninput="myFunction5(this.value)" placeholder="Período">
-                            <button onclick="cambiar_foto_company()" style="display:auto">edit foto</button>
-                            <div>
-                                <input id="edit_foto2" type="file" onchange="showFile2(this)" style="display:none">
-                            </div>
-                            <button class="btn btn-primary" type="submit" onclick="guardar_experiencia()">Guardar
-                                experiencia</button>
-                        </div>
-                    </div>
-                    <a href="https://www.itba.edu.ar/" target="_blank">
-                        <img src="https://media-exp1.licdn.com/dms/image/C560BAQERO44d80vFIg/company-logo_200_200/0/1519867420254?e=1672272000&v=beta&t=hFEj_UIBwj0HEhFqTSNk89lVpaELyD4tD1NpFGaXeco"
-                            alt="Logo ITBA">
-                    </a>
-                    <h4>ITBA</h4>
-                    <h5>Asistente de Ventas</h5>
-                    <p>sept. 2017 - sept. 2019 · 2 años</p>
                 </li>
             </ul>
         </div>
@@ -256,32 +127,14 @@
     <div class="container-fluid">
         <div id="informacion" class="col-8">
             <ul style="list-style: none">
-                <li>
+                <li *ngFor="let educacion of educacionList">
                     <a href="https://www.uba.ar/">
-                        <img src="https://media-exp1.licdn.com/dms/image/C4E0BAQF-QztqGXBokQ/company-logo_200_200/0/1519861386584?e=1672272000&v=beta&t=7QphHHUoxXpGGm2W0gDH-3nwaF-5iMM-3lE3q1xcCRY"
+                        <img [src]="educacion.img"
                             alt="Logo UBA">
                     </a>
-                    <h4>Universidad de Buenos Aires</h4>
-                    <h5>Edición</h5>
-                    <p>2014 - 2022</p>
-                </li>
-                <li>
-                    <a href="https://www.educacionit.com/">
-                        <img src="https://media-exp1.licdn.com/dms/image/C4D0BAQHWD6W0Nbd8sw/company-logo_200_200/0/1647956251519?e=1672272000&v=beta&t=Q6h1i51woseFhkGjEgWyL13NCzjLEmr9FLTUnoLoIPY"
-                            alt="Logo EducacionIT">
-                    </a>
-                    <h4>Educación IT</h4>
-                    <h5>Marketing Digital</h5>
-                    <p>2021</p>
-                </li>
-                <li>
-                    <a href="http://www.unm.edu.ar/">
-                        <img src="https://media-exp1.licdn.com/dms/image/C4E0BAQGjbYHYBHqBbA/company-logo_200_200/0/1642946584873?e=1672272000&v=beta&t=TjgCaav9EoHxnSUInaW2YRgAPeuPCTpMn9UCi6oha_k"
-                            alt="Logo UNM">
-                    </a>
-                    <h4>Universidad Nacional de Moreno</h4>
-                    <h5>Licenciatura en Comunicación Social</h5>
-                    <p>2012 - 2017</p>
+                    <h4>{{educacion.school}}</h4>
+                    <h5>{{educacion.career}}</h5>
+                    <p><time>{{educacion.start}}</time> - <time>{{educacion.end}}</time></p>
                 </li>
             </ul>
         </div>
