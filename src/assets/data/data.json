@@ -11,17 +11,18 @@
 
 	"school": {
 		"name": "Universidad de Buenos Aires",
-		"img": "",
-		"url": "#"
+		"img": "https://media-exp1.licdn.com/dms/image/C4E0BAQF-QztqGXBokQ/company-logo_200_200/0/1519861386584?e=1672876800&v=beta&t=vXaH73PjY4NuyATDFWiIoCWitjLgHURAXm6FmhK-Rww",
+		"url": "https://www.uba.ar/#/"
 	},
 
 	"location": "Buenos Aires, Argentina",
-	"about": "Licenciada en Comunicación Social",
+	"about": "Licenciada en Comunicación Social con orientación en Producción Multimedial. Editora y correctora de estilo con experiencia en el área de educación y capacitación tecnológica.",
 
 	"experience": [{
 			"position": "Auxiliar de Producción de audiolibros",
 			"company": "Penguin Random House",
-			"img": "https://www.penguinlibros.com/ar/img/penguinlibros-ar-logo-16608551614.jpg",
+			"url": "https://www.penguinlibros.com/ar/",
+			"img": "https://media-exp1.licdn.com/dms/image/D4D0BAQGI4uzKxiyGrw/company-logo_200_200/0/1664370109921?e=1672876800&v=beta&t=lYGnF5MCuv1Ez311xUoKA_FyzBfpn9bNlVzkPZ7f70E",
 			"start": "oct 2021",
 			"end": "actualidad",
 			"timeElapsed": "2 años"
@@ -29,6 +30,7 @@
 		{
 			"position": "Ejecutiva de Cuentas",
 			"company": "Entercomm",
+			"url": "https://www.entercommla.com/",
 			"img": "https://media-exp1.licdn.com/dms/image/C560BAQGRSJmvYUbJdQ/company-logo_200_200/0/1624048133510?e=1672876800&v=beta&t=Bj1ZvH-dbXOpm5EjD9IsNJkbXGhhHyncpi8CbB2gtbw",
 			"start": "jul 2021",
 			"end": "oct 2021",
@@ -37,6 +39,7 @@
 		{
 			"position": "Consultora en Comunicaciones",
 			"company": "BINIT",
+			"url": "https://binit.tech/es/",
 			"img": "https://media-exp1.licdn.com/dms/image/D4D0BAQHOk44dlb5oqg/company-logo_200_200/0/1656608647092?e=1672876800&v=beta&t=-AIXAUtDQwBJ980hfsSkwMsxCv4MT-2LCMJSMFCcsfQ",
 			"start": "sep 2019",
 			"end": "sep 2021",
@@ -45,6 +48,7 @@
 		{
 			"position": "Asistente comercial",
 			"company": "ITBA",
+			"url": "https://www.itba.edu.ar/",
 			"img": "https://media-exp1.licdn.com/dms/image/C560BAQERO44d80vFIg/company-logo_200_200/0/1519867420254?e=1672876800&v=beta&t=sx4YCA8FRb4V4CEmnqQhS3YAznYUm3P9pRvx1hLhV_c",
 			"start": "sep 2017",
 			"end": "sep 2019",
@@ -56,6 +60,7 @@
 			"school": "Universidad de Buenos Aires",
 			"title": "Editora",
 			"img": "https://media-exp1.licdn.com/dms/image/C4E0BAQF-QztqGXBokQ/company-logo_200_200/0/1519861386584?e=1672876800&v=beta&t=vXaH73PjY4NuyATDFWiIoCWitjLgHURAXm6FmhK-Rww",
+			"url": "https://www.uba.ar/#/",
 			"career": "Edición",
 			"start": "2017",
 			"end": "2022"
@@ -64,21 +69,77 @@
 			"school": "Educación IT",
 			"title": "Marketing Digital",
 			"img": "https://media-exp1.licdn.com/dms/image/C4D0BAQHWD6W0Nbd8sw/company-logo_200_200/0/1647956251519?e=1672876800&v=beta&t=2-03w_smEj6Tpc_5wEAL9gNrIJo0lj7q6hcvP3Rm5wI",
+			"url": "https://www.educacionit.com/",
 			"career": "Introducción al Marketing Digital",
-			"start": "2012",
-			"end": "2017"
+			"start": "2021",
+			"end": "2021"
 		},
 		{
 			"school": "Universidad Nacional de Moreno",
 			"title": "Licenciada en Comunicación Social",
 			"img": "https://media-exp1.licdn.com/dms/image/C4E0BAQGjbYHYBHqBbA/company-logo_200_200/0/1642946584873?e=1672876800&v=beta&t=ZUdKZhwqp9xLJpnxagzRIsaSyvfMx5_a4vWQ4hoD65s",
+			"url": "http://www.unm.edu.ar/",
 			"career": "Licenciatura en Comunicación Social",
-			"start": "2021",
-			"end": "2021"
+			"start": "2012",
+			"end": "2017"
 		}
 	],
 
-	"proyectos": [{
-		"name": "mi portfolio"
-	}]
+	"projects": [{
+		"name": "Mi portfolio en Github",
+		"school": "Argentina Programa",
+		"date": "2022",
+		"img": "https://media-exp1.licdn.com/dms/image/C560BAQGv-Dd7A2pQ0g/company-logo_200_200/0/1646458288684?e=1672272000&v=beta&t=g9p4u_sLdDGy0XM4CvjlRcv4k9_b7g8WHOx_H9hQqj0",
+		"url": "https://github.com/ariana-luz/portfolio_estatico"
+	}],
+	
+	"certifications": [{
+			"title": "Certificación Sé programar",
+			"school": "Argentina Programa",
+			"img": "https://media-exp1.licdn.com/dms/image/C4E0BAQHhDPmHBm3pCg/company-logo_200_200/0/1563979482487?e=1672272000&v=beta&t=AjQ8cf2nfnQcMpyma__tvFdElYBhNi73fv92wfVprxI",
+			"url": "https://mumuki.io/argentina-programa/certificates/verify/6E_Y_glgWr8dh6J3",
+			"date": "2021"
+		},
+		{
+			"title": "Social Media Ads",
+			"school": "Educación IT",
+			"img": "https://media-exp1.licdn.com/dms/image/C4D0BAQHWD6W0Nbd8sw/company-logo_200_200/0/1647956251519?e=1672272000&v=beta&t=Q6h1i51woseFhkGjEgWyL13NCzjLEmr9FLTUnoLoIPY",
+			"url": "https://certificados.educacionit.com/certificados/cache/Ariana-Osuna-Vargas-1A572531/1A51564",
+			"date": "2021"
+		},
+		{
+			"title": "Front End Web Developer",
+			"school": "Educación IT",
+			"img": "https://media-exp1.licdn.com/dms/image/C4D0BAQHWD6W0Nbd8sw/company-logo_200_200/0/1647956251519?e=1672272000&v=beta&t=Q6h1i51woseFhkGjEgWyL13NCzjLEmr9FLTUnoLoIPY",
+			"url": "https://certificados.educacionit.com/api/Ariana-Osuna-Vargas-1A572531/1A52288",
+			"date": "2021"
+		},
+		{
+			"title": "Introducción al Desarrollo Web I",
+			"school": "Google Actívate",
+			"img": "https://media-exp1.licdn.com/dms/image/C4D0BAQGlBBVXCfSVag/company-logo_200_200/0/1570003065196?e=1672272000&v=beta&t=b9CnPs8WK5kf54feyIlJYT05T3g4D6jNNXd9SUhMD1o",
+			"url": "https://learndigital.withgoogle.com/link/1nur091p2ww",
+			"id": "ID de la credencial: 44M QFS WGW"
+		},
+		{
+			"title": "Programación Web",
+			"school": "Educación IT",
+			"img": "https://media-exp1.licdn.com/dms/image/C4D0BAQHWD6W0Nbd8sw/company-logo_200_200/0/1647956251519?e=1672272000&v=beta&t=Q6h1i51woseFhkGjEgWyL13NCzjLEmr9FLTUnoLoIPY",
+			"url": "https://api.educacionit.com/pdf/certificados/Ariana-Osuna-Vargas-572531/51818",
+			"id": "2020"
+		},
+		{
+			"title": "Javascript",
+			"school": "Educación IT",
+			"img": "https://media-exp1.licdn.com/dms/image/C4D0BAQHWD6W0Nbd8sw/company-logo_200_200/0/1647956251519?e=1672272000&v=beta&t=Q6h1i51woseFhkGjEgWyL13NCzjLEmr9FLTUnoLoIPY",
+			"url": "https://certificados.educacionit.com/api/Ariana-Osuna-Vargas-1A572531/1A51328",
+			"date": "2020"
+		},
+		{
+			"title": "User Experience (UX)",
+			"school": "Educación IT",
+			"img": "https://media-exp1.licdn.com/dms/image/C4D0BAQHWD6W0Nbd8sw/company-logo_200_200/0/1647956251519?e=1672272000&v=beta&t=Q6h1i51woseFhkGjEgWyL13NCzjLEmr9FLTUnoLoIPY",
+			"url": "https://certificados.educacionit.com/api/Ariana-Osuna-Vargas-1A572531/1A51318",
+			"date": "2020"
+		}]
 }

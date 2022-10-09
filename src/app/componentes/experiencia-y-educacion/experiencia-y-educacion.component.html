@@ -128,7 +128,7 @@
         <div id="informacion" class="col-8">
             <ul style="list-style: none">
                 <li *ngFor="let educacion of educacionList">
-                    <a href="https://www.uba.ar/">
+                    <a href={{educacion.url}} target="_blank">
                         <img [src]="educacion.img"
                             alt="Logo UBA">
                     </a>
