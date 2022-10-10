@@ -81,15 +81,15 @@
                             experiencia</button>
                     </div>
                 </div>
-                <li *ngFor="let experiencia of experienciaList">
+                <li>
                     <div id="informacion">
-                        <a href={{experiencia.url}} target="_blank">
+                        <a href="" target="_blank">
                             <img id="avatar20"
-                            [src]="experiencia.img">
+                            src="">
                         </a>
-                        <h4 id="company1">{{experiencia.company}}</h4>
-                        <h5 id="position1">{{experiencia.position}}</h5>
-                        <p id="period1"><time>{{experiencia.start}}</time> - <time>{{experiencia.end}}</time></p>
+                        <h4 id="company1"></h4>
+                        <h5 id="position1"></h5>
+                        <p id="period1"><time></time> - <time></time></p>
                     </div>
                 </li>
             </ul>
@@ -127,14 +127,14 @@
     <div class="container-fluid">
         <div id="informacion" class="col-8">
             <ul style="list-style: none">
-                <li *ngFor="let educacion of educacionList">
-                    <a href={{educacion.url}} target="_blank">
-                        <img [src]="educacion.img"
+                <li>
+                    <a href="" target="_blank">
+                        <img src="educacion.img"
                             alt="Logo UBA">
                     </a>
-                    <h4>{{educacion.school}}</h4>
-                    <h5>{{educacion.career}}</h5>
-                    <p><time>{{educacion.start}}</time> - <time>{{educacion.end}}</time></p>
+                    <h4></h4>
+                    <h5></h5>
+                    <p><time></time> - <time></time></p>
                 </li>
             </ul>
         </div>
