@@ -8,10 +8,15 @@ import { persona } from '../acerca-de/Model/Persona';
   styleUrls: ['./proyectos-y-certificaciones.component.css']
 })
 export class ProyectosYCertificacionesComponent implements OnInit {
-  persona: persona = new persona("","","");
+  proyectosList:any;
+  certificacionesList:any;
+  miPortfolio:any;
+
   constructor(private datosPortfolio: PortfolioService) { }
 
   ngOnInit(): void {
-    this.datosPortfolio.getPersona().subscribe(data => {this.persona = data})
+    this.datosPortfolio.obtenerDatos().subscribe(data=>this.miPortfolio=data)
+    this.datosPortfolio.obtenerDatos().subscribe(data=>{this.proyectosList=data.projects})
+    this.datosPortfolio.obtenerDatos().subscribe(data=>{this.certificacionesList=data.certifications})
   }
 }

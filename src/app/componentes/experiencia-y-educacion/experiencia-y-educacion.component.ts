@@ -8,11 +8,15 @@ import { persona } from '../acerca-de/Model/Persona';
   styleUrls: ['./experiencia-y-educacion.component.css']
 })
 export class ExperienciaYEducacionComponent implements OnInit {
-  persona: persona = new persona("","","");
+  educacionList:any;
+  experienciaList:any;
+  miPortfolio:any;
 
   constructor(private datosPortfolio:PortfolioService) { }
 
   ngOnInit(): void {
-    this.datosPortfolio.getPersona().subscribe(data => {this.persona = data})
+    this.datosPortfolio.obtenerDatos().subscribe(data=>this.miPortfolio=data)
+    this.datosPortfolio.obtenerDatos().subscribe(data=>{this.educacionList=data.education})
+    this.datosPortfolio.obtenerDatos().subscribe(data=>{this.experienciaList=data.experience})
   }
 }
