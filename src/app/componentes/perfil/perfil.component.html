@@ -1,0 +1,446 @@
+<header class="container-fluid">
+    <nav class="navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-10">
+                    <a class="nav-link p-1" href="https://argentinaprograma.inti.gob.ar/" target="_blank">
+                        <img id="logo_img" class="rounded float-start"
+                            src="https://argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/logo/1661403264/APLogo-20-20.png"
+                            alt="Logo Argentina Programa">
+                    </a>
+                </div>
+                <div class="col-sm-2">
+                    <ul class="navbar-nav flex-row justify-content-md-end">
+                        <!-- Linkedin -->
+                        <li>
+                            <a class="nav-link p-1" href="https://www.linkedin.com/in/arianaosunavargas/"
+                                target="_blank">
+                                <button style="margin-top: 20px" type="button" class="btn btn-dark me-md-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                        class="bi bi-linkedin" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z">
+                                        </path>
+                                    </svg>
+                                </button>
+                            </a>
+                        </li>
+                        <!-- Github -->
+                        <li>
+                            <a class="nav-link p-1" href="https://github.com/ariana-luz" target="_blank">
+                                <button style="margin-top: 20px" type="button" class="btn btn-dark me-md-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                        class="bi bi-github" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z">
+                                        </path>
+                                    </svg>
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link p-1" href="#">
+                                <button style="margin-top: 20px" type="button" class="btn btn-dark me-md-2" onclick="Login()">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                        class="bi bi-box-arrow-left" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z" />
+                                        <path fill-rule="evenodd"
+                                            d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z" />
+                                    </svg>
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<!--HEADER OK!-->
+
+<section class="container-fluid">
+    <div class="card mat_card">
+        <div id="banner">
+            <img id="avatar" [src]="persona.back_image" alt="Banner">
+            <button type="button" class="edit btn btn-edit btn-right" onclick="cambiar_foto_banner()" style="display:none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                    class="bi bi-pencil-square" viewBox="0 0 16 16">
+                    <path
+                        d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                    <path fill-rule="evenodd"
+                        d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                </svg>
+            </button>
+        </div>
+        <div class="row">
+            <div class="col-8"></div>
+            <div class="col-4">
+                <div>
+                    <input id="edit_foto_banner" type="file" onchange="showFile(this)" style="display:none">
+                </div>
+            </div>
+        </div>
+        <div style="padding: 10px">
+            <img id="perfil" class="profile_img" [src]="persona.image" alt="Foto de Perfil">
+            <button type="button" class="btn btn-edit btn-right" onclick="cambiar_foto_perfil()" style="display:none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                    class="bi bi-pencil-square" viewBox="0 0 16 16">
+                    <path
+                        d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                    <path fill-rule="evenodd"
+                        d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                </svg>
+            </button>
+        </div>
+        <div>
+            <input id="edit_foto_perfil" type="file" onchange="showFile5(this)" style="display:none">
+        </div>
+    </div>
+</section>
+
+<section class="card mat_card">
+    <div class="container-fluid">
+        <div class="row">
+            <div id="info_data" class="col-8">
+                <h1 id="info_name">{{persona.fullname}}</h1>
+                <p id="info_profession">{{persona.profession}}</p>
+                <p id="info_location">{{persona.location}}</p>
+                <button class="btn btn-primary" onclick="mostrar_contacto()">Información de contacto</button>
+                <input id="contacto" class="form-control" type="text" value={{persona.contact}}
+                    aria-label="readonly input example" readonly style="display:none">
+            </div>
+            <div id="info_details" class="col-4 rounded float-end">
+                <!-- <button type="button" class="btn btn-edit btn-right" style="display:auto" onclick="cambiar_data()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-pencil-square" viewBox="0 0 16 16">
+                        <path
+                            d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                        <path fill-rule="evenodd"
+                            d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                    </svg>
+                </button> -->
+                <ul style="list-style: none">
+                    <li>
+                        <a href={{miPortfolio.company.url}} target="_blank">
+                            <img id="avatar3" [src]="miPortfolio.company.img" alt="Logo Penguin">
+                            <h6 id="info_company">{{miPortfolio.company.name}}</h6>
+                        </a>
+                    </li>
+                    <li>
+                        <a href={{miPortfolio.school.url}} target="_blank">
+                            <img id="avatar4" [src]="miPortfolio.school.img" alt="Logo UBA">
+                            <h6 id="info_school">{{miPortfolio.school.name}}</h6>
+                        </a>
+                    </li>
+                </ul>
+                <!-- <div id="edit-data" style="display:none">
+                    <div class="row">
+                        <div class="col-sm-2">
+
+                            <button class="btn btn-primary" onclick="cambiar_foto_companies()" style="display:auto">Edit
+                                Company</button>
+                            <input id="edit_foto3" type="file" onchange="showFile3(this)" style="display:none">
+                            <br>
+                            <button class="btn btn-primary" onclick="cambiar_foto_schools()" style="display:auto">Edit
+                                University</button>
+                            <input id="edit_foto4" type="file" onchange="showFile4(this)" style="display:none">
+
+                            <label for=" exampleFormControlInput1" class="form-label"></label>
+                            <input type="text" oninput="myFunction6(this.value)">
+                            <label for="exampleFormControlInput1" class="form-label"></label>
+                            <input type="text" oninput="myFunction7(this.value)">
+                            <label for="exampleFormControlInput1" class="form-label"></label>
+                            <input type="text" oninput="myFunction8(this.value)">
+                            <label for="exampleFormControlInput1" class="form-label"></label>
+                            <input type="text" oninput="myFunction9(this.value)">
+                            <label for="exampleFormControlInput1" class="form-label"></label>
+                            <input type="text" oninput="myFunction10(this.value)">
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</section>
+<!--BANNER Y PERFIL OK!-->
+<section class="card mat_card">
+    <div class="container-fluid">
+        <div id="info_data" class="col-8">
+            <div id="experiencia">
+                <h2>Acerca de</h2>
+                <button class="btn btn-edit btn-right" onclick="cambiar_parrafo()" style="display:none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-pencil-square" viewBox="0 0 16 16">
+                        <path
+                            d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                        <path fill-rule="evenodd"
+                            d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                    </svg>
+                </button>
+            </div>
+            <p id="text-acercade">{{persona.about}}</p>
+        </div>
+        <div>
+            <input id="edit-acercade" type="text" oninput="myFunction2(this.value)" style="display:none">
+        </div>
+    </div>
+</section>
+
+<section class="card mat_card">
+    <div class="container-fluid">
+        <div id="info_data" class="col-8">
+            <div id="experiencia">
+                <h2>Experiencia</h2>
+                <button type="button" class="btn btn-edit btn-right" onclick="edit_experiencia()" style="display:none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-pencil-square" viewBox="0 0 16 16">
+                        <path
+                            d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                        <path fill-rule="evenodd"
+                            d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                    </svg>
+                </button>
+                <button type="button" class="btn btn-edit btn-right" onclick="nueva_experiencia()" style="display:none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-plus-square" viewBox="0 0 16 16">
+                        <path
+                            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                        <path
+                            d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                    </svg>
+                </button>
+                <div>
+                    <div id="agregar_experiencia" class="mb-3" style="display:none">
+                        <label for="exampleFormControlInput1" class="form-label"></label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1"
+                            oninput="myFunction3(this.value)" placeholder="Compañía">
+                        <label for="exampleFormControlInput1" class="form-label"></label>
+                        <input type="text" class="form-control" id="exampleFormControlInput2"
+                            oninput="myFunction4(this.value)" placeholder="Puesto">
+                        <label for="exampleFormControlInput1" class="form-label"></label>
+                        <input type="text" class="form-control" id="exampleFormControlInput3"
+                            oninput="myFunction5(this.value)" placeholder="Período">
+                        <button onclick="cambiar_foto_company()" style="display:auto">edit foto</button>
+                        <div>
+                            <input id="edit_foto2" type="file" onchange="showFile2(this)" style="display:none">
+                        </div>
+                        <button class="btn btn-primary" type="submit" onclick="guardar_nueva_experiencia()">Guardar
+                            experiencia</button>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-edit btn-right" style="display:none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-x-square" viewBox="0 0 16 16">
+                        <path
+                            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                        <path
+                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div id="informacion" class="col-8">
+            <ul style="list-style: none">
+                <li>
+                    <div id="details" style="display:none">
+                        <a href="" target="_blank">
+                            <img id="avatar2" src="" alt="">
+                        </a>
+                        <h4 id="company"></h4>
+                        <h5 id="position"></h5>
+                        <p id="period"><time></time> - <time></time>
+                    </div>
+                </li>
+                <div>
+                    <div id="editar_experiencia" class="mb-3" style="display:none">
+                        <label for="exampleFormControlInput1" class="form-label"></label>
+                        <input type="text" class="form-control" id="exampleFormControlInput4"
+                            oninput="myFunction12(this.value)" placeholder="Compañía">
+                        <label for="exampleFormControlInput1" class="form-label"></label>
+                        <input type="text" class="form-control" id="exampleFormControlInput5"
+                            oninput="myFunction13(this.value)" placeholder="Puesto">
+                        <label for="exampleFormControlInput1" class="form-label"></label>
+                        <input type="text" class="form-control" id="exampleFormControlInput6"
+                            oninput="myFunction14(this.value)" placeholder="Período">
+                        <button onclick="cambiar_foto_company2()" style="display:auto">edit foto</button>
+                        <div>
+                            <input id="edit_foto6" type="file" onchange="showFile6(this)" style="display:none">
+                        </div>
+                        <button class="btn btn-primary" type="submit" onclick="guardar_experiencia()">Guardar
+                            experiencia</button>
+                    </div>
+                </div>
+                <li *ngFor="let experiencia of experienciaList">
+                    <div id="informacion">
+                        <a href={{experiencia.url}} target="_blank">
+                            <img id="avatar20" [src]="experiencia.img">
+                        </a>
+                        <h4 id="company1">{{experiencia.position}}</h4>
+                        <h5 id="position1">{{experiencia.company}}</h5>
+                        <p id="period1"><time>{{experiencia.start}}</time> - <time>{{experiencia.end}}</time></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<section class="card mat_card">
+    <div class="container-fluid">
+        <div id="info_data" class="col-8">
+            <div id="experiencia">
+                <h2>Educación</h2>
+                <button type="button" class="btn btn-edit btn-right" style="display:none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-pencil-square" viewBox="0 0 16 16">
+                        <path
+                            d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                        <path fill-rule="evenodd"
+                            d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                    </svg>
+                </button>
+                <button type="button" class="btn btn-edit btn-right" style="display:none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-plus-square" viewBox="0 0 16 16">
+                        <path
+                            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                        <path
+                            d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                    </svg>
+                </button>
+                <button type="button" class="btn btn-edit btn-right" style="display:none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-x-square" viewBox="0 0 16 16">
+                        <path
+                            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                        <path
+                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div id="informacion" class="col-8">
+            <ul style="list-style: none">
+                <li *ngFor="let educacion of educacionList">
+                    <a href={{educacion.url}} target="_blank">
+                        <img [src]="educacion.img" alt="Logo UBA">
+                    </a>
+                    <h4>{{educacion.school}}</h4>
+                    <h5>{{educacion.career}}</h5>
+                    <p><time>{{educacion.start}}</time> - <time>{{educacion.end}}</time></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="card mat_card">
+    <div class="container-fluid">
+        <div id="info_data" class="col-8">
+            <div id="experiencia">
+                <h2>Proyectos</h2>
+                <button type="button" class="btn btn-edit btn-right" style="display:none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-pencil-square" viewBox="0 0 16 16">
+                        <path
+                            d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                        <path fill-rule="evenodd"
+                            d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                    </svg>
+                </button>
+                <button type="button" class="btn btn-edit btn-right" style="display:none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-plus-square" viewBox="0 0 16 16">
+                        <path
+                            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                        <path
+                            d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                    </svg>
+                </button>
+                <button type="button" class="btn btn-edit btn-right" style="display:none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-x-square" viewBox="0 0 16 16">
+                        <path
+                            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                        <path
+                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div id="informacion" class="col-8">
+            <ul style="list-style: none">
+                <li *ngFor="let proyectos of proyectosList">
+                    <a href={{proyectos.url}} target="_blank">
+                        <img [src]="proyectos.img"
+                            alt="Logo Argentina Programa">
+                    </a>
+                    <h4>{{proyectos.name}}</h4>
+                    <h5>{{proyectos.school}}</h5>
+                    <p>{{proyectos.date}}</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="card mat_card">
+    <div class="container-fluid">
+        <div id="info_data" class="col-8">
+            <div id="experiencia">
+                <h2>Certificaciones</h2>
+                <button type="button" class="btn btn-edit btn-right" style="display:none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-pencil-square" viewBox="0 0 16 16">
+                        <path
+                            d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                        <path fill-rule="evenodd"
+                            d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                    </svg>
+                </button>
+                <button type="button" class="btn btn-edit btn-right" style="display:none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-plus-square" viewBox="0 0 16 16">
+                        <path
+                            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                        <path
+                            d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                    </svg>
+                </button>
+                <button type="button" class="btn btn-edit btn-right" style="display:none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-x-square" viewBox="0 0 16 16">
+                        <path
+                            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                        <path
+                            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div id="informacion" class="col-8">
+            <ul style="list-style: none">
+                <li *ngFor="let certificaciones of certificacionesList">
+                    <a href={{certificaciones.url}} target="_blank">
+                        <img [src]="certificaciones.img"
+                            alt="Logo Mumuki">
+                    </a>
+                    <h4>{{certificaciones.name}}</h4>
+                    <h5>{{certificaciones.school}}</h5>
+                    <p>{{certificaciones.date}}</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<app-footer></app-footer>

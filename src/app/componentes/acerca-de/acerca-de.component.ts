@@ -8,12 +8,14 @@ import { persona } from './Model/Persona';
   styleUrls: ['./acerca-de.component.css']
 })
 export class AcercaDeComponent implements OnInit {
+  miPortfolio:any;
   persona: persona = new persona("","","","","","","","","");
 
   constructor(public datosPortfolio:PortfolioService) { }
 
   ngOnInit(): void {
     this.datosPortfolio.getPersona().subscribe(data => {this.persona = data})
+    this.datosPortfolio.obtenerDatos().subscribe(data=>this.miPortfolio=data)
   }
 
 }
