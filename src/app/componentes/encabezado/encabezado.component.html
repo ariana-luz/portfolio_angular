@@ -59,11 +59,10 @@
 </header>
 <!--HEADER OK!-->
 
-
 <section class="container-fluid">
     <div class="card mat_card">
         <div id="banner">
-            <img id="avatar" [src]="miPortfolio.backImage" alt="Banner">
+            <img id="avatar" [src]="persona.back_image" alt="Banner">
             <button type="button" class="edit btn btn-edit btn-right" onclick="cambiar_foto_banner()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                     class="bi bi-pencil-square" viewBox="0 0 16 16">
@@ -83,7 +82,7 @@
             </div>
         </div>
         <div style="padding: 10px">
-            <img id="perfil" class="profile_img" [src]="miPortfolio.image" alt="Foto de Perfil">
+            <img id="perfil" class="profile_img" [src]="persona.image" alt="Foto de Perfil">
             <button type="button" class="btn btn-edit btn-right" onclick="cambiar_foto_perfil()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                     class="bi bi-pencil-square" viewBox="0 0 16 16">
@@ -97,22 +96,18 @@
         <div>
             <input id="edit_foto_perfil" type="file" onchange="showFile5(this)" style="display:none">
         </div>
-    </div>
-</section>
 
-<section class="card mat_card">
-    <div class="container-fluid">
         <div class="row">
             <div id="info_data" class="col-8">
-                <h1 id="info_name">{{miPortfolio.name}}</h1>
-                <p id="info_profession">{{miPortfolio.position}}</p>
-                <p id="info_location">{{miPortfolio.location}}</p>
+                <h1 id="info_name">{{persona.fullname}}</h1>
+                <p id="info_profession">{{persona.profession}}</p>
+                <p id="info_location">{{persona.location}}</p>
                 <button class="btn btn-primary" onclick="mostrar_contacto()">Información de contacto</button>
-                <input id="contacto" class="form-control" type="text" value="Email: arianaosunavargas92@gmail.com"
+                <input id="contacto" class="form-control" type="text" value={{persona.contact}}
                     aria-label="readonly input example" readonly style="display:none">
             </div>
             <div id="info_details" class="col-4 rounded float-end">
-                <button type="button" class="btn btn-edit btn-right" style="display:auto" onclick="cambiar_data()">
+                <!-- <button type="button" class="btn btn-edit btn-right" style="display:auto" onclick="cambiar_data()">
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                         class="bi bi-pencil-square" viewBox="0 0 16 16">
                         <path
@@ -120,22 +115,22 @@
                         <path fill-rule="evenodd"
                             d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
                     </svg>
-                </button>
+                </button> -->
                 <ul style="list-style: none">
                     <li>
-                        <a href={{miPortfolio.company.url}} target="_blank">
-                            <img id="avatar3" [src]="miPortfolio.company.img" alt="Logo Penguin">
-                            <h6 id="info_company">{{miPortfolio.company.name}}</h6>
+                        <a href={{company.url}} target="_blank">
+                            <img id="avatar3" [src]="company.img" alt="Logo Penguin">
+                            <h6 id="info_company">{{persona.company}}</h6>
                         </a>
                     </li>
                     <li>
-                        <a href={{miPortfolio.school.url}} target="_blank">
-                            <img id="avatar4" [src]="miPortfolio.school.img" alt="Logo UBA">
-                            <h6 id="info_school">{{miPortfolio.school.name}}</h6>
+                        <a href={{school.url}} target="_blank">
+                            <img id="avatar4" [src]="school.img" alt="Logo UBA">
+                            <h6 id="info_school">{{persona.school}}</h6>
                         </a>
                     </li>
                 </ul>
-                <div id="edit-data" style="display:none">
+                <!-- <div id="edit-data" style="display:none">
                     <div class="row">
                         <div class="col-sm-2">
 
@@ -159,9 +154,8 @@
                             <input type="text" oninput="myFunction10(this.value)">
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
 </section>
-<!--BANNER Y PERFIL OK!-->

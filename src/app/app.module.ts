@@ -11,6 +11,8 @@ import { EncabezadoComponent } from './componentes/encabezado/encabezado.compone
 import { AcercaDeComponent } from './componentes/acerca-de/acerca-de.component';
 import { ExperienciaYEducacionComponent } from './componentes/experiencia-y-educacion/experiencia-y-educacion.component';
 import { ProyectosYCertificacionesComponent } from './componentes/proyectos-y-certificaciones/proyectos-y-certificaciones.component';
+import { FooterComponent } from './componentes/footer/footer.component';
+import { PerfilComponent } from './componentes/perfil/perfil.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { ProyectosYCertificacionesComponent } from './componentes/proyectos-y-ce
     AcercaDeComponent,
     ExperienciaYEducacionComponent,
     ProyectosYCertificacionesComponent,
+    FooterComponent,
+    PerfilComponent,
   ],
   imports: [
     BrowserModule,

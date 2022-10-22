@@ -7,18 +7,15 @@ import { PortfolioService } from 'src/app/servicios/portfolio.service';
   styleUrls: ['./proyectos-y-certificaciones.component.css']
 })
 export class ProyectosYCertificacionesComponent implements OnInit {
-  proyectosList: any;
-  certificacionesList: any;
+  proyectosList:any;
+  certificacionesList:any;
+  miPortfolio:any;
 
   constructor(private datosPortfolio: PortfolioService) { }
 
   ngOnInit(): void {
-    this.datosPortfolio.obtenerDatos().subscribe(data => {
-      this.proyectosList = data.projects;
-    })
-
-    this.datosPortfolio.obtenerDatos().subscribe(data => {
-      this.certificacionesList = data.certifications;
-    })
+    this.datosPortfolio.obtenerDatos().subscribe(data=>this.miPortfolio=data)
+    this.datosPortfolio.obtenerDatos().subscribe(data=>{this.proyectosList=data.projects})
+    this.datosPortfolio.obtenerDatos().subscribe(data=>{this.certificacionesList=data.certifications})
   }
 }

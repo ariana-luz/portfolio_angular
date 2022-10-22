@@ -287,3 +287,8 @@ function showFile6(input){
 	};
 	document.getElementById("edit_foto6").style.display="none"
 }
+
+Login()
+{
+  this.ruta.navigate(['/iniciar-sesion']);
+}
