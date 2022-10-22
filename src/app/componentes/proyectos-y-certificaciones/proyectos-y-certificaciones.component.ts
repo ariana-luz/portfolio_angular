@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { PortfolioService } from 'src/app/servicios/portfolio.service';
-import { persona } from '../acerca-de/Model/Persona';
 
 @Component({
   selector: 'app-proyectos-y-certificaciones',

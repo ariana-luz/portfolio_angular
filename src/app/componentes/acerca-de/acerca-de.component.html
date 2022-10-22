@@ -1,107 +1,4 @@
-<section class="container-fluid">
-    <div class="card mat_card">
-        <div id="banner">
-            <img id="avatar" [src]="persona.back_image" alt="Banner">
-            <button type="button" class="edit btn btn-edit btn-right" onclick="cambiar_foto_banner()">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                    class="bi bi-pencil-square" viewBox="0 0 16 16">
-                    <path
-                        d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
-                    <path fill-rule="evenodd"
-                        d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
-                </svg>
-            </button>
-        </div>
-        <div class="row">
-            <div class="col-8"></div>
-            <div class="col-4">
-                <div>
-                    <input id="edit_foto_banner" type="file" onchange="showFile(this)" style="display:none">
-                </div>
-            </div>
-        </div>
-        <div style="padding: 10px">
-            <img id="perfil" class="profile_img" [src]="persona.image" alt="Foto de Perfil">
-            <button type="button" class="btn btn-edit btn-right" onclick="cambiar_foto_perfil()">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                    class="bi bi-pencil-square" viewBox="0 0 16 16">
-                    <path
-                        d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
-                    <path fill-rule="evenodd"
-                        d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
-                </svg>
-            </button>
-        </div>
-        <div>
-            <input id="edit_foto_perfil" type="file" onchange="showFile5(this)" style="display:none">
-        </div>
-    </div>
-</section>
 
-<section class="card mat_card">
-    <div class="container-fluid">
-        <div class="row">
-            <div id="info_data" class="col-8">
-                <h1 id="info_name">{{persona.fullname}}</h1>
-                <p id="info_profession">{{persona.profession}}</p>
-                <p id="info_location">{{persona.location}}</p>
-                <button class="btn btn-primary" onclick="mostrar_contacto()">Información de contacto</button>
-                <input id="contacto" class="form-control" type="text" value={{persona.contact}}
-                    aria-label="readonly input example" readonly style="display:none">
-            </div>
-            <div id="info_details" class="col-4 rounded float-end">
-                <!-- <button type="button" class="btn btn-edit btn-right" style="display:auto" onclick="cambiar_data()">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                        class="bi bi-pencil-square" viewBox="0 0 16 16">
-                        <path
-                            d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
-                        <path fill-rule="evenodd"
-                            d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
-                    </svg>
-                </button> -->
-                <ul style="list-style: none">
-                    <li>
-                        <a href={{miPortfolio.company.url}} target="_blank">
-                            <img id="avatar3" [src]="miPortfolio.company.img" alt="Logo Penguin">
-                            <h6 id="info_company">{{miPortfolio.company.name}}</h6>
-                        </a>
-                    </li>
-                    <li>
-                        <a href={{miPortfolio.school.url}} target="_blank">
-                            <img id="avatar4" [src]="miPortfolio.school.img" alt="Logo UBA">
-                            <h6 id="info_school">{{miPortfolio.school.name}}</h6>
-                        </a>
-                    </li>
-                </ul>
-                <!-- <div id="edit-data" style="display:none">
-                    <div class="row">
-                        <div class="col-sm-2">
-
-                            <button class="btn btn-primary" onclick="cambiar_foto_companies()" style="display:auto">Edit
-                                Company</button>
-                            <input id="edit_foto3" type="file" onchange="showFile3(this)" style="display:none">
-                            <br>
-                            <button class="btn btn-primary" onclick="cambiar_foto_schools()" style="display:auto">Edit
-                                University</button>
-                            <input id="edit_foto4" type="file" onchange="showFile4(this)" style="display:none">
-
-                            <label for=" exampleFormControlInput1" class="form-label"></label>
-                            <input type="text" oninput="myFunction6(this.value)">
-                            <label for="exampleFormControlInput1" class="form-label"></label>
-                            <input type="text" oninput="myFunction7(this.value)">
-                            <label for="exampleFormControlInput1" class="form-label"></label>
-                            <input type="text" oninput="myFunction8(this.value)">
-                            <label for="exampleFormControlInput1" class="form-label"></label>
-                            <input type="text" oninput="myFunction9(this.value)">
-                            <label for="exampleFormControlInput1" class="form-label"></label>
-                            <input type="text" oninput="myFunction10(this.value)">
-                        </div>
-                    </div>
-                </div> -->
-            </div>
-        </div>
-    </div>
-</section>
 <!--BANNER Y PERFIL OK!-->
 <section class="card mat_card">
     <div class="container-fluid">
@@ -118,7 +15,7 @@
                     </svg>
                 </button>
             </div>
-            <p id="text-acercade">{{persona.about}}</p>
+            <p id="text-acercade">{{acerca_de.about}}</p>
         </div>
         <div>
             <input id="edit-acercade" type="text" oninput="myFunction2(this.value)" style="display:none">
