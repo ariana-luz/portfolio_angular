@@ -5,7 +5,7 @@ import { acerca_de } from '../componentes/Model/acerca_de';
 import { company } from '../componentes/Model/company';
 import { experience } from '../componentes/Model/Experience';
 import { school } from '../componentes/Model/school';
-import { education } from '../componentes/Model/education';
+import { educacion } from '../componentes/Model/educacion';
 import { persona } from 'src/app/componentes/Model/persona'
 
 
@@ -31,9 +31,9 @@ export class PortfolioService {
     return this.http.get<acerca_de>(this.url+"traer/acercade")
   }
   
-  public getEducation():Observable<education>{
-    console.log(education)
-    return this.http.get<education>(this.url+"traer/education")
+  public geteducacion():Observable<educacion>{
+    console.log(educacion)
+    return this.http.get<educacion>(this.url+"traer/educacion")
   }
 
   public getExperience():Observable<experience>{
@@ -51,18 +51,18 @@ export class PortfolioService {
     return this.http.get<school>(this.url+"traer/school")
   }
 
-//  public lista(): Observable<education[]>{
-//   return this.http.get<education[]>(this.url + '/education/lista');
+//  public lista(): Observable<educacion[]>{
+//   return this.http.get<educacion[]>(this.url + '/educacion/lista');
 //   }
 
-//   // public detail(id: number): Observable<education>{
-//   //   return this.http.get<education>(this.url + 'education' + `detail/${id}`);
+//   // public detail(id: number): Observable<educacion>{
+//   //   return this.http.get<educacion>(this.url + 'educacion' + `detail/${id}`);
 //   // }
-//   // public save(education: education): Observable<any>{
-//   //   return this.http.post<any>(this.url + 'education' + 'create', education);
+//   // public save(educacion: educacion): Observable<any>{
+//   //   return this.http.post<any>(this.url + 'educacion' + 'create', educacion);
 //   // }
-//   // public update(id: number, education: education): Observable<any>{
-//   //   return this.http.put<any>(this.url + 'education' + `update/${id}`, education);
+//   // public update(id: number, educacion: educacion): Observable<any>{
+//   //   return this.http.put<any>(this.url + 'educacion' + `update/${id}`, educacion);
 //   // }
 //   public delete(id: number): Observable<any>{
 //     return this.http.delete<any>(this.url + `delete/${id}`);

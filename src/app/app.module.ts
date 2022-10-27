@@ -9,10 +9,11 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { PortfolioService } from './servicios/portfolio.service';
 import { EncabezadoComponent } from './componentes/encabezado/encabezado.component';
 import { AcercaDeComponent } from './componentes/acerca-de/acerca-de.component';
-import { ExperienciaYEducacionComponent } from './componentes/experiencia-y-educacion/experiencia-y-educacion.component';
 import { ProyectosYCertificacionesComponent } from './componentes/proyectos-y-certificaciones/proyectos-y-certificaciones.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { PerfilComponent } from './componentes/perfil/perfil.component';
+import { EducacionComponent } from './componentes/educacion/educacion.component';
+import { ExperienciaComponent } from './componentes/experiencia/experiencia.component';
 
 @NgModule({
   declarations: [
@@ -21,10 +22,11 @@ import { PerfilComponent } from './componentes/perfil/perfil.component';
     PortfolioComponent,
     EncabezadoComponent,
     AcercaDeComponent,
-    ExperienciaYEducacionComponent,
     ProyectosYCertificacionesComponent,
     FooterComponent,
     PerfilComponent,
+    EducacionComponent,
+    ExperienciaComponent,
   ],
   imports: [
     BrowserModule,

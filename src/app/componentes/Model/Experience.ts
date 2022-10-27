@@ -2,13 +2,13 @@ export class experience {
     id?: number;
     company: String;
     position: String;
-    start: Date;
-    end: Date;
+    img: String;
+    url: String;
 
-    constructor(company: String, position: String, start: Date, end: Date){
+    constructor(company: String, position: String, img: String, url: String){
         this.company = company;
         this.position = position;
-        this.start = start;
-        this.end = end;
+        this.img = img;
+        this.url = url;
     }
 }
