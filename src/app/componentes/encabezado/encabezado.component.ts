@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { PortfolioService } from 'src/app/servicios/portfolio.service';
 import { persona } from 'src/app/componentes/Model/persona'
+import { PortfolioService } from 'src/app/servicios/portfolio.service';
 
 @Component({
   selector: 'app-encabezado',
@@ -8,21 +8,20 @@ import { persona } from 'src/app/componentes/Model/persona'
   styleUrls: ['./encabezado.component.css']
 })
 export class EncabezadoComponent implements OnInit {
-  persona: persona = new persona("","","","","","","","");
-  educacionList:any;
-  experienciaList:any;
-  miPortfolio:any;
-  company: any;
-  school: any;
+  
+  persona: persona [] = [];
+  miportfolio: any;
 
-  constructor(public datosPortfolio:PortfolioService) { }
+  constructor(public personaService:PortfolioService) { }
 
   ngOnInit(): void {
-    this.datosPortfolio.getPersona().subscribe(data => {this.persona = data})
-    this.datosPortfolio.getCompany().subscribe(data => {this.company = data})
-    this.datosPortfolio.getSchool().subscribe(data => {this.school = data})
-    this.datosPortfolio.obtenerDatos().subscribe(data=>{this.educacionList=data.education})
-    this.datosPortfolio.obtenerDatos().subscribe(data=>{this.experienciaList=data.experience})
-    this.datosPortfolio.obtenerDatos().subscribe(data=>this.miPortfolio=data)
+    this.cargarPersona()
+  }
+
+  cargarPersona(): void {
+    console.log('algo')
+    this.personaService.listaPersona().subscribe(data => this.persona = data);
+    this.personaService.obtenerDatos().subscribe(data=> this.miportfolio= data);
+  
   }
 }

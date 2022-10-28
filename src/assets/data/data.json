@@ -1,6 +1,6 @@
 {
-	"name": "Ariana Osuna Vargas",
-	"backImage": "https://media-exp1.licdn.com/dms/image/C4D16AQFoUceXro0LAg/profile-displaybackgroundimage-shrink_350_1400/0/1614458133264?e=1669852800&v=beta&t=ghqzqomjdBk2yCNRCRgA3DEDYFtwaYTAuYmlNIpimsg",
+	"fullname": "Ariana Osuna Vargas",
+	"backImage": "https://media-exp1.licdn.com/dms/image/C4D16AQFoUceXro0LAg/profile-displaybackgroundimage-shrink_350_1400/0/1614458133264?e=1672272000&v=beta&t=BghrKTyR38oJFgSB5kQTadvbDrGasV4vi4cTnEhLZ94",
 	"image": "https://media-exp1.licdn.com/dms/image/C4D03AQGprUkrN0t3lQ/profile-displayphoto-shrink_800_800/0/1660605594052?e=1669852800&v=beta&t=HIKzyoPlRqTejJFlIqQUACMZteZ-xOEA-PGYkjOCt3g",
 	"position": "Editora",
 	"company": {
@@ -8,17 +8,14 @@
 		"img": "https://www.penguinlibros.com/ar/img/penguinlibros-ar-logo-16608551614.jpg",
 		"url": "https://www.penguinlibros.com/"
 	},
-
+	"location": "Buenos Aires, Argentina",
+	"contact": "arianaosunavargas92@gmail.com",
+	"about": "Licenciada en Comunicación Social con orientación en Producción Multimedial. Editora y correctora de estilo con experiencia en el área de educación y capacitación tecnológica.",
 	"school": {
 		"name": "Universidad de Buenos Aires",
 		"img": "https://media-exp1.licdn.com/dms/image/C4E0BAQF-QztqGXBokQ/company-logo_200_200/0/1519861386584?e=1672876800&v=beta&t=vXaH73PjY4NuyATDFWiIoCWitjLgHURAXm6FmhK-Rww",
 		"url": "https://www.uba.ar/#/"
-	},
-
-	"location": "Buenos Aires, Argentina",
-	"contact": "arianaosunavargas92@gmail.com",
-	"about": "Licenciada en Comunicación Social con orientación en Producción Multimedial. Editora y correctora de estilo con experiencia en el área de educación y capacitación tecnológica.",
-
+	},	
 	"experience": [{
 			"position": "Auxiliar de Producción de audiolibros",
 			"company": "Penguin Random House",
@@ -56,7 +53,6 @@
 			"timeElapsed": "2 años"
 		}
 	],
-
 	"education": [{
 		"id": 1,
 			"school": "Universidad de Buenos Aires",
@@ -92,7 +88,7 @@
 		"school": "Argentina Programa",
 		"date": "2022",
 		"img": "https://media-exp1.licdn.com/dms/image/C560BAQGv-Dd7A2pQ0g/company-logo_200_200/0/1646458288684?e=1672272000&v=beta&t=g9p4u_sLdDGy0XM4CvjlRcv4k9_b7g8WHOx_H9hQqj0",
-		"url": "https://github.com/ariana-luz/portfolio_estatico"
+		"url": "https://github.com/ariana-luz/portfolio_angular"
 	}],
 	
 	"certifications": [{

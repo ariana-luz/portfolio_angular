@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PortfolioService } from 'src/app/servicios/portfolio.service';
+import { certificaciones } from '../Model/certificaciones';
+import { proyectos } from '../Model/proyectos';
 
 @Component({
   selector: 'app-proyectos-y-certificaciones',
@@ -7,15 +9,22 @@ import { PortfolioService } from 'src/app/servicios/portfolio.service';
   styleUrls: ['./proyectos-y-certificaciones.component.css']
 })
 export class ProyectosYCertificacionesComponent implements OnInit {
-  proyectosList:any;
-  certificacionesList:any;
-  miPortfolio:any;
+  proyectos: proyectos[] = [];
+  certificaciones: certificaciones[] = [];
 
-  constructor(private datosPortfolio: PortfolioService) { }
+
+  constructor(private proyectosycertificacionesService: PortfolioService) { }
 
   ngOnInit(): void {
-    this.datosPortfolio.obtenerDatos().subscribe(data=>this.miPortfolio=data)
-    this.datosPortfolio.obtenerDatos().subscribe(data=>{this.proyectosList=data.projects})
-    this.datosPortfolio.obtenerDatos().subscribe(data=>{this.certificacionesList=data.certifications})
+    this.cargarProyectos();
+    this.cargarCertificaciones();
+  }
+
+  cargarProyectos(){
+  this.proyectosycertificacionesService.listaProyectos().subscribe(data=>this.proyectos=data);
+  }
+
+  cargarCertificaciones(){
+  this.proyectosycertificacionesService.listaCertificaciones().subscribe(data=>this.certificaciones=data)
   }
 }

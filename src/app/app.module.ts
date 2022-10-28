@@ -14,6 +14,8 @@ import { FooterComponent } from './componentes/footer/footer.component';
 import { PerfilComponent } from './componentes/perfil/perfil.component';
 import { EducacionComponent } from './componentes/educacion/educacion.component';
 import { ExperienciaComponent } from './componentes/experiencia/experiencia.component';
+import { PruebaComponent } from './componentes/prueba/prueba.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,12 +29,14 @@ import { ExperienciaComponent } from './componentes/experiencia/experiencia.comp
     PerfilComponent,
     EducacionComponent,
     ExperienciaComponent,
+    PruebaComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [PortfolioService],
   bootstrap: [AppComponent]

@@ -1,24 +1,25 @@
 import { Component, OnInit } from '@angular/core';
-import { Educacion } from '../Model/Educacion';
 import { PortfolioService } from 'src/app/servicios/portfolio.service';
+import { Educacion } from '../Model/Educacion';
 
 @Component({
-  selector: 'app-educacion',
-  templateUrl: './educacion.component.html',
-  styleUrls: ['./educacion.component.css']
+  selector: 'app-prueba',
+  templateUrl: './prueba.component.html',
+  styleUrls: ['./prueba.component.css']
 })
-export class EducacionComponent implements OnInit {
+export class PruebaComponent implements OnInit {
 
   educacion: Educacion[] = [];
 
   constructor(private educacionService: PortfolioService) { }
 
   ngOnInit(): void {
-    this.cargarEducacion()
+    this.cargarProductos()
   }
-  
-  cargarEducacion(): void {
+
+  cargarProductos(): void {
     console.log('algo')
     this.educacionService.listaEducacion().subscribe(data => this.educacion = data)
   }
+
 }

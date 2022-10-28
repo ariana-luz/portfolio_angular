@@ -60,9 +60,9 @@
 <!--HEADER OK!-->
 
 <section class="container-fluid">
-    <div class="card mat_card">
+    <div class="card mat_card" *ngFor="let persona of persona">
         <div id="banner">
-            <img id="avatar" [src]="persona.back_image" alt="Banner">
+            <img id="avatar" [src]="persona.backImage" alt="Banner">
             <button type="button" class="edit btn btn-edit btn-right" onclick="cambiar_foto_banner()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                     class="bi bi-pencil-square" viewBox="0 0 16 16">
@@ -118,14 +118,14 @@
                 </button> -->
                 <ul style="list-style: none">
                     <li>
-                        <a href={{company.url}} target="_blank">
-                            <img id="avatar3" [src]="company.img" alt="Logo Penguin">
+                        <a href={{miportfolio.company.url}} target="_blank">
+                            <img id="avatar3" [src]="miportfolio.company.img"  alt="Logo Penguin">
                             <h6 id="info_company">{{persona.company}}</h6>
                         </a>
                     </li>
                     <li>
-                        <a href={{school.url}} target="_blank">
-                            <img id="avatar4" [src]="school.img" alt="Logo UBA">
+                        <a href={{miportfolio.school.url}} target="_blank">
+                            <img id="avatar4" [src]="miportfolio.school.img" alt="Logo UBA">
                             <h6 id="info_school">{{persona.school}}</h6>
                         </a>
                     </li>

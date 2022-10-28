@@ -3,7 +3,7 @@
         <div id="info_data" class="col-8">
             <div id="experiencia">
                 <h2>Experiencia</h2>
-                <button type="button" class="btn btn-edit btn-right" style="display:auto" onclick="edit_experiencia()">
+                <button type="button" class="btn btn-edit btn-right" style="display:auto">
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                         class="bi bi-pencil-square" viewBox="0 0 16 16">
                         <path
@@ -12,7 +12,7 @@
                             d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
                     </svg>
                 </button>
-                <button type="button" class="btn btn-edit btn-right" onclick="nueva_experiencia()">
+                <button type="button" class="btn btn-edit btn-right">
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                         class="bi bi-plus-square" viewBox="0 0 16 16">
                         <path
@@ -21,25 +21,6 @@
                             d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
                     </svg>
                 </button>
-                <div>
-                    <div id="agregar_experiencia" class="mb-3" style="display:none">
-                        <label for="exampleFormControlInput1" class="form-label"></label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1"
-                            oninput="myFunction3(this.value)" placeholder="Compañía">
-                        <label for="exampleFormControlInput1" class="form-label"></label>
-                        <input type="text" class="form-control" id="exampleFormControlInput2"
-                            oninput="myFunction4(this.value)" placeholder="Puesto">
-                        <label for="exampleFormControlInput1" class="form-label"></label>
-                        <input type="text" class="form-control" id="exampleFormControlInput3"
-                            oninput="myFunction5(this.value)" placeholder="Período">
-                        <button onclick="cambiar_foto_company()" style="display:auto">edit foto</button>
-                        <div>
-                            <input id="edit_foto2" type="file" onchange="showFile2(this)" style="display:none">
-                        </div>
-                        <button class="btn btn-primary" type="submit" onclick="guardar_nueva_experiencia()">Guardar
-                            experiencia</button>
-                    </div>
-                </div>
                 <button type="button" class="btn btn-edit btn-right" style="display:auto">
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                         class="bi bi-x-square" viewBox="0 0 16 16">
@@ -50,51 +31,21 @@
                     </svg>
                 </button>
             </div>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div id="informacion" class="col-8">
-            <ul style="list-style: none">
-                <li>
-                    <div id="details" style="display:none">
-                        <a href="" target="_blank">
-                            <img id="avatar2" src="" alt="">
+        </div>   
+        <div class="container-fluid">
+            <div id="informacion" class="col-8">
+                <ul style="list-style: none">
+                    <li *ngFor="let expe of experiencia">
+                        <a href={{expe.url}} target="_blank">
+                            <img [src]="expe.img">
                         </a>
-                        <h4 id="company"></h4>
-                        <h5 id="position"></h5>
-                        <p id="period"><time></time> - <time></time>
-                    </div>
-                </li>
-                <div>
-                    <div id="editar_experiencia" class="mb-3" style="display:none">
-                        <label for="exampleFormControlInput1" class="form-label"></label>
-                        <input type="text" class="form-control" id="exampleFormControlInput4"
-                            oninput="myFunction12(this.value)" placeholder="Compañía">
-                        <label for="exampleFormControlInput1" class="form-label"></label>
-                        <input type="text" class="form-control" id="exampleFormControlInput5"
-                            oninput="myFunction13(this.value)" placeholder="Puesto">
-                        <label for="exampleFormControlInput1" class="form-label"></label>
-                        <input type="text" class="form-control" id="exampleFormControlInput6"
-                            oninput="myFunction14(this.value)" placeholder="Período">
-                        <button onclick="cambiar_foto_company2()" style="display:auto">edit foto</button>
-                        <div>
-                            <input id="edit_foto6" type="file" onchange="showFile6(this)" style="display:none">
-                        </div>
-                        <button class="btn btn-primary" type="submit" onclick="guardar_experiencia()">Guardar
-                            experiencia</button>
-                    </div>
-                </div>
-                <li>
-                    <div id="informacion">
-                        <a href="" target="_blank">
-                            <img id="avatar20" [src]="">
-                        </a>
-                        <h4 id="company1"></h4>
-                        <h5 id="position1"></h5>
-                    </div>
-                </li>
-            </ul>
+                        <h4>{{expe.company}}</h4>
+                        <h5>{{expe.position}}</h5>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </section>
 
+                

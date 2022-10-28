@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { PortfolioService } from 'src/app/servicios/portfolio.service';
 import { acerca_de } from '../Model/acerca_de';
+import { PortfolioService } from 'src/app/servicios/portfolio.service';
 
 @Component({
   selector: 'app-acerca-de',
@@ -8,16 +8,18 @@ import { acerca_de } from '../Model/acerca_de';
   styleUrls: ['./acerca-de.component.css']
 })
 export class AcercaDeComponent implements OnInit {
-  acerca_de: acerca_de = new acerca_de("",);
-  miPortfolio:any;
+  
+  acerca_de: acerca_de [] = [];
 
-  constructor(public datosPortfolio:PortfolioService) { }
+  constructor(public acercaDeService: PortfolioService) { }
 
   ngOnInit(): void {
-    this.datosPortfolio.getAcerca_de().subscribe(data => {this.acerca_de = data});
-    this.datosPortfolio.obtenerDatos().subscribe(data=>this.miPortfolio=data)
-
+    this.cargarAcercaDe()
   }
 
+  cargarAcercaDe(): void {
+    console.log('algo')
+    this.acercaDeService.listaAcercade().subscribe(data => this.acerca_de = data)
+  }
 }
 

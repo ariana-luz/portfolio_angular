@@ -62,7 +62,7 @@
 <section class="container-fluid">
     <div class="card mat_card">
         <div id="banner">
-            <img id="avatar" [src]="persona.back_image" alt="Banner">
+            <img id="avatar" [src]="miPortfolio.backImage" alt="Banner">
             <button type="button" class="edit btn btn-edit btn-right" onclick="cambiar_foto_banner()" style="display:none">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                     class="bi bi-pencil-square" viewBox="0 0 16 16">
@@ -82,7 +82,7 @@
             </div>
         </div>
         <div style="padding: 10px">
-            <img id="perfil" class="profile_img" [src]="persona.image" alt="Foto de Perfil">
+            <img id="perfil" class="profile_img" [src]="miPortfolio.image" alt="Foto de Perfil">
             <button type="button" class="btn btn-edit btn-right" onclick="cambiar_foto_perfil()" style="display:none">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                     class="bi bi-pencil-square" viewBox="0 0 16 16">
@@ -96,18 +96,14 @@
         <div>
             <input id="edit_foto_perfil" type="file" onchange="showFile5(this)" style="display:none">
         </div>
-    </div>
-</section>
 
-<section class="card mat_card">
-    <div class="container-fluid">
         <div class="row">
             <div id="info_data" class="col-8">
-                <h1 id="info_name">{{persona.fullname}}</h1>
-                <p id="info_profession">{{persona.profession}}</p>
-                <p id="info_location">{{persona.location}}</p>
+                <h1 id="info_name">{{miPortfolio.fullname}}</h1>
+                <p id="info_profession">{{miPortfolio.profession}}</p>
+                <p id="info_location">{{miPortfolio.location}}</p>
                 <button class="btn btn-primary" onclick="mostrar_contacto()">Información de contacto</button>
-                <input id="contacto" class="form-control" type="text" value={{persona.contact}}
+                <input id="contacto" class="form-control" type="text" value={{miPortfolio.contact}}
                     aria-label="readonly input example" readonly style="display:none">
             </div>
             <div id="info_details" class="col-4 rounded float-end">
@@ -179,7 +175,7 @@
                     </svg>
                 </button>
             </div>
-            <p id="text-acercade">{{acerca_de.about}}</p>
+            <p id="text-acercade" *ngFor="let acerca_de of acerca_de">{{acerca_de.about}}</p>
         </div>
         <div>
             <input id="edit-acercade" type="text" oninput="myFunction2(this.value)" style="display:none">
@@ -273,15 +269,12 @@
                             experiencia</button>
                     </div>
                 </div>
-                <li *ngFor="let experiencia of experienciaList">
-                    <div id="informacion">
-                        <a href={{experiencia.url}} target="_blank">
-                            <img id="avatar20" [src]="experiencia.img">
-                        </a>
-                        <h4 id="company1">{{experiencia.position}}</h4>
-                        <h5 id="position1">{{experiencia.company}}</h5>
-                        <p id="period1"><time>{{experiencia.start}}</time> - <time>{{experiencia.end}}</time></p>
-                    </div>
+                <li *ngFor="let expe of experiencia">
+                    <a href={{expe.url}} target="_blank">
+                        <img [src]="expe.img">
+                    </a>
+                    <h4>{{expe.company}}</h4>
+                    <h5>{{expe.position}}</h5>
                 </li>
             </ul>
         </div>
@@ -327,13 +320,12 @@
     <div class="container-fluid">
         <div id="informacion" class="col-8">
             <ul style="list-style: none">
-                <li *ngFor="let educacion of educacionList">
-                    <a href={{educacion.url}} target="_blank">
-                        <img [src]="educacion.img" alt="Logo UBA">
+                <li *ngFor="let educ of educacion">
+                    <a href={{educ.url}} target="_blank">
+                        <img [src]="educ.img" alt="Logo UBA">
                     </a>
-                    <h4>{{educacion.school}}</h4>
-                    <h5>{{educacion.career}}</h5>
-                    <p><time>{{educacion.start}}</time> - <time>{{educacion.end}}</time></p>
+                    <h4>{{educ.career}}</h4>
+                    <h5>{{educ.school}}</h5>
                 </li>
             </ul>
         </div>
@@ -378,14 +370,13 @@
     <div class="container-fluid">
         <div id="informacion" class="col-8">
             <ul style="list-style: none">
-                <li *ngFor="let proyectos of proyectosList">
+                <li *ngFor="let proyectos of proyectos">
                     <a href={{proyectos.url}} target="_blank">
                         <img [src]="proyectos.img"
                             alt="Logo Argentina Programa">
                     </a>
                     <h4>{{proyectos.name}}</h4>
                     <h5>{{proyectos.school}}</h5>
-                    <p>{{proyectos.date}}</p>
                 </li>
             </ul>
         </div>
@@ -429,14 +420,13 @@
     <div class="container-fluid">
         <div id="informacion" class="col-8">
             <ul style="list-style: none">
-                <li *ngFor="let certificaciones of certificacionesList">
+                <li *ngFor="let certificaciones of certificaciones">
                     <a href={{certificaciones.url}} target="_blank">
                         <img [src]="certificaciones.img"
                             alt="Logo Mumuki">
                     </a>
-                    <h4>{{certificaciones.name}}</h4>
+                    <h4>{{certificaciones.title}}</h4>
                     <h5>{{certificaciones.school}}</h5>
-                    <p>{{certificaciones.date}}</p>
                 </li>
             </ul>
         </div>

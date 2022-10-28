@@ -1,4 +1,4 @@
-export class experience {
+export class Experiencia {
     id?: number;
     company: String;
     position: String;
