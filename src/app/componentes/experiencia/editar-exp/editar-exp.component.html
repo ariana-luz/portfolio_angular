@@ -1,0 +1,26 @@
+<h1>Editar experiencia</h1>
+<div class="container-mt-5" *ngIf="experiencia">
+    <div class="row">
+        <div class="col-md-4 mx-auto-4">
+            <form (ngSubmit)="update()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="company">Company</label>
+                    <input type="text" placeholder="{{experiencia.company}}" class="form-control" id="company" name="company" [(ngModel)]="experiencia.company" required>
+                </div>
+                <div class="form-group">
+                    <label for="position">Position</label>
+                    <input type="text" placeholder="{{experiencia.position}}" class="form-control" id="position" name="position" [(ngModel)]="experiencia.position" required>
+                </div>
+                <div class="form-group">
+                    <label for="img">Image</label>
+                    <input type="text" placeholder="{{experiencia.img}}" class="form-control" id="img" name="img" [(ngModel)]="experiencia.img" required>
+                </div>
+                <div class="form-group">
+                    <label for="url">URL</label>
+                    <input type="text" placeholder="{{experiencia.url}}" class="form-control" id="url" name="url" [(ngModel)]="experiencia.url" required>
+                </div>
+                <button class="btn btn-primary">Guardar</button>
+            </form>
+        </div>
+    </div>
+</div>

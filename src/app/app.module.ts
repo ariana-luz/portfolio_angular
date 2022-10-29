@@ -16,6 +16,11 @@ import { EducacionComponent } from './componentes/educacion/educacion.component'
 import { ExperienciaComponent } from './componentes/experiencia/experiencia.component';
 import { PruebaComponent } from './componentes/prueba/prueba.component';
 import { FormsModule } from '@angular/forms';
+import { TraerExpComponent } from './componentes/experiencia/traer-exp/traer-exp.component';
+import { EditarExpComponent } from './componentes/experiencia/editar-exp/editar-exp.component';
+import { CrearExpComponent } from './componentes/experiencia/crear-exp/crear-exp.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -30,13 +35,18 @@ import { FormsModule } from '@angular/forms';
     EducacionComponent,
     ExperienciaComponent,
     PruebaComponent,
+    TraerExpComponent,
+    EditarExpComponent,
+    CrearExpComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot()
   ],
   providers: [PortfolioService],
   bootstrap: [AppComponent]

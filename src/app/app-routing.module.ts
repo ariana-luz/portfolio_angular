@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CrearExpComponent } from './componentes/experiencia/crear-exp/crear-exp.component';
+import { EditarExpComponent } from './componentes/experiencia/editar-exp/editar-exp.component';
+import { TraerExpComponent } from './componentes/experiencia/traer-exp/traer-exp.component';
 import { IniciarSesionComponent } from './componentes/iniciar-sesion/iniciar-sesion.component';
 import { PerfilComponent } from './componentes/perfil/perfil.component';
 import { PortfolioComponent } from './componentes/portfolio/portfolio.component';
@@ -10,6 +13,9 @@ const routes: Routes = [
   {path:'portfolio',component:PortfolioComponent},
   {path:'iniciar-sesion',component:IniciarSesionComponent},
   {path:'prueba',component:PruebaComponent},
+  {path:'traer-exp',component:TraerExpComponent},
+  {path:'editar-exp/:id',component:EditarExpComponent},
+  {path:'crear-exp',component:CrearExpComponent},
   {path:'',redirectTo:'perfil',pathMatch:'full'}
 ];
 

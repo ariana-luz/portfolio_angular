@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { Experiencia } from '../Model/Experiencia';
+import { Experiencia } from '../../Model/Experiencia';
 import { PortfolioService } from 'src/app/servicios/portfolio.service';
 
 @Component({
-  selector: 'app-experiencia',
-  templateUrl: './experiencia.component.html',
-  styleUrls: ['./experiencia.component.css']
+  selector: 'app-traer-exp',
+  templateUrl: './traer-exp.component.html',
+  styleUrls: ['./traer-exp.component.css']
 })
-export class ExperienciaComponent implements OnInit {
+export class TraerExpComponent implements OnInit {
 
   experiencia: Experiencia[] = [];
 
@@ -18,18 +18,19 @@ export class ExperienciaComponent implements OnInit {
   }
 
   cargarExperiencia(): void {
-    console.log('algo')
     this.experienciaService.listaExperiencia().subscribe(data => this.experiencia = data)
   }
 
   deleteExperiencia(id?: number) {
     if (id != undefined) {
-      this.experienciaService.deleteExperiencia(id).subscribe(data => {
-        this.cargarExperiencia();
-      }, err => {
-        alert("No se pudo eliminar");
-      })
+      this.experienciaService.deleteExperiencia(id).subscribe(
+        data => {
+          this.cargarExperiencia();
+          alert("Experiencia Eliminada");
+        }, err => {
+          alert("No se pudo eliminar");
+        }
+      )
     }
   }
 }
-

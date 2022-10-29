@@ -45,4 +45,21 @@ export class PortfolioService {
     return this.httpClient.get<certificaciones[]>(this.url + 'certificaciones/traer');
   }
 
+  public detailExperiencia(id: number): Observable<Experiencia>{
+    return this.httpClient.get<Experiencia>(this.url + `experiencia/detail/${id}`);
+  }
+
+  public saveExperiencia(experiencia: Experiencia): Observable<any> {
+    return this.httpClient.post<any>(this.url + 'experiencia/crear', experiencia);
+  }
+
+  public editarExperiencia(id:number, experiencia: Experiencia): Observable<any> {
+    return this.httpClient.put<any>(this.url + `experiencia/editar/${id}`, experiencia);
+  }
+
+  public deleteExperiencia(id:number): Observable<any> {
+    return this.httpClient.delete<any>(this.url + `experiencia/borrar/${id}`);
+  }
+
 }
+
