@@ -13,7 +13,7 @@ import { Educacion } from '../componentes/Model/Educacion';
   providedIn: 'root'
 })
 export class PortfolioService {
-  url ="http://localhost:8080/";
+  url ="https://heroku-springboot-ariana.herokuapp.com/";
 
   constructor(private httpClient:HttpClient) { }
 
