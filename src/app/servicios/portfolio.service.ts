@@ -25,6 +25,14 @@ export class PortfolioService {
     return this.httpClient.get<acerca_de[]>(this.url + 'acercade/traer');
   }
 
+  public editarAcercaDe(id:number, acerca_de: acerca_de): Observable<any> {
+    return this.httpClient.put<any>(this.url + `acercade/editar/${id}`, acerca_de);
+  }
+
+  public detailAcercaDe(id: number): Observable<acerca_de>{
+    return this.httpClient.get<acerca_de>(this.url + `acercade/detail/${id}`);
+  }
+
   public listaEducacion(): Observable<Educacion[]>{
     return this.httpClient.get<Educacion[]>(this.url + 'educacion/traer');
   }

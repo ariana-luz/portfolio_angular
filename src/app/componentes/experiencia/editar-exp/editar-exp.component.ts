@@ -22,7 +22,7 @@ export class EditarExpComponent implements OnInit {
       console.log(this.experiencia)
     }, err => {
       alert("Error al editar");
-      this.router.navigate(['']);
+      this.router.navigate(['/portfolio']);
     }
     )
   }
@@ -34,7 +34,7 @@ export class EditarExpComponent implements OnInit {
       console.log(this.experiencia)
     }, err => {
       alert("Error al editar experiencia");
-      this.router.navigate(['']);
+      this.router.navigate(['/portfolio']);
     }
     )
   }

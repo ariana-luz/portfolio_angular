@@ -21,6 +21,7 @@ import { EditarExpComponent } from './componentes/experiencia/editar-exp/editar-
 import { CrearExpComponent } from './componentes/experiencia/crear-exp/crear-exp.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
+import { EditAcercaDeComponent } from './componentes/acerca-de/edit-acerca-de/edit-acerca-de.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { ToastrModule } from 'ngx-toastr';
     PruebaComponent,
     TraerExpComponent,
     EditarExpComponent,
-    CrearExpComponent
+    CrearExpComponent,
+    EditAcercaDeComponent
   ],
   imports: [
     BrowserModule,

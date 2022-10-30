@@ -1,0 +1,14 @@
+<h1>Editar perfil</h1>
+<div class="container-mt-5" *ngIf="acerca_de">
+    <div class="row">
+        <div class="col-md-4 mx-auto-4">
+            <form (ngSubmit)="update()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="acerca_de">Presentación</label>
+                    <input type="text" placeholder="{{acerca_de.about}}" class="form-control" id="acerca_de" name="acerca_de" [(ngModel)]="acerca_de.about" required>
+                </div>
+                <button class="btn btn-primary">Guardar</button>
+            </form>
+        </div>
+    </div>
+</div>

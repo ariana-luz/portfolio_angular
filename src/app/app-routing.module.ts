@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { EditAcercaDeComponent } from './componentes/acerca-de/edit-acerca-de/edit-acerca-de.component';
 import { CrearExpComponent } from './componentes/experiencia/crear-exp/crear-exp.component';
 import { EditarExpComponent } from './componentes/experiencia/editar-exp/editar-exp.component';
 import { TraerExpComponent } from './componentes/experiencia/traer-exp/traer-exp.component';
@@ -16,6 +17,7 @@ const routes: Routes = [
   {path:'traer-exp',component:TraerExpComponent},
   {path:'editar-exp/:id',component:EditarExpComponent},
   {path:'crear-exp',component:CrearExpComponent},
+  {path:'edit-acerca-de/:id',component:EditAcercaDeComponent},
   {path:'',redirectTo:'perfil',pathMatch:'full'}
 ];
 

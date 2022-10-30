@@ -3,9 +3,9 @@
 <section class="card mat_card">
     <div class="container-fluid">
         <div id="info_data" class="col-8">
-            <div id="experiencia">
+            <div id="experiencia" *ngFor="let acerca_de of acerca_de">
                 <h2>Acerca de</h2>
-                <button class="btn btn-edit btn-right" onclick="cambiar_parrafo()">
+                <button routerLink="/edit-acerca-de/{{acerca_de.id}}" class="btn btn-edit btn-right">
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                         class="bi bi-pencil-square" viewBox="0 0 16 16">
                         <path
@@ -16,9 +16,6 @@
                 </button>
             </div>
             <p id="text-acercade" *ngFor="let acerca_de of acerca_de">{{acerca_de.about}}</p>
-        </div>
-        <div>
-            <input id="edit-acercade" type="text" oninput="myFunction2(this.value)" style="display:none">
         </div>
     </div>
 </section>

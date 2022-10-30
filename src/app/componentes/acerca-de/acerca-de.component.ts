@@ -11,7 +11,7 @@ export class AcercaDeComponent implements OnInit {
   
   acerca_de: acerca_de [] = [];
 
-  constructor(public acercaDeService: PortfolioService) { }
+  constructor(private acercaDeService: PortfolioService) { }
 
   ngOnInit(): void {
     this.cargarAcercaDe()
@@ -21,5 +21,6 @@ export class AcercaDeComponent implements OnInit {
     console.log('algo')
     this.acercaDeService.listaAcercade().subscribe(data => this.acerca_de = data)
   }
+  
 }
 

@@ -24,10 +24,10 @@ export class CrearExpComponent implements OnInit {
     const experiencia = new Experiencia(this.company, this.position, this.img, this.url);
     this.experienciaService.saveExperiencia(experiencia).subscribe(data => {
       alert("Experiencia agregada correctamente");
-      this.router.navigate(['']);
+      this.router.navigate(['/portfolio']);
     }, err=>{
       alert("falló");
-      this.router.navigate(['']);
+      this.router.navigate(['/portfolio']);
     }
     )
   }
