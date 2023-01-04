@@ -10,11 +10,15 @@ import { PortfolioService } from 'src/app/servicios/portfolio.service';
 export class AcercaDeComponent implements OnInit {
   
   acerca_de: acerca_de [] = [];
+  miPortfolio : any;
 
   constructor(private acercaDeService: PortfolioService) { }
 
   ngOnInit(): void {
-    this.cargarAcercaDe()
+    this.acercaDeService.obtenerDatos().subscribe(data => {
+      this.miPortfolio=data;
+    })
+    // this.cargarAcercaDe()
   }
 
   cargarAcercaDe(): void {

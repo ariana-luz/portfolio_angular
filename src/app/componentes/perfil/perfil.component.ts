@@ -30,13 +30,18 @@ export class PerfilComponent implements OnInit {
 
 
   ngOnInit(): void {
+    this.datosPortfolio.obtenerDatos().subscribe(data => this.miPortfolio = data)
+    this.datosPortfolio.obtenerDatos().subscribe(data => this.experienciaList = data.experience)
+    this.datosPortfolio.obtenerDatos().subscribe(data => this.educacionList = data.education)
+    this.datosPortfolio.obtenerDatos().subscribe(data => this.proyectosList = data.projects)
+    this.datosPortfolio.obtenerDatos().subscribe(data => this.certificacionesList = data.certifications)
     this.cargarAcercaDe();
     this.cargarEducacion();
     this.cargarExperiencia();
     this.cargarPersona();
     this.cargarProyectos();
     this.cargarCertificaciones()
-    this.datosPortfolio.obtenerDatos().subscribe(data => this.miPortfolio = data)
+    
   }
 
   cargarAcercaDe(): void {

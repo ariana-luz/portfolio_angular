@@ -40,7 +40,7 @@
                         </li>
                         <li>
                             <!-- <a class="nav-link p-1" href="#"> -->
-                                <button routerLink="/iniciar-sesion" style="margin-top: 20px" type="button" class="btn btn-dark me-md-2" onclick="Login()">
+                                <!-- <button routerLink="/iniciar-sesion" style="margin-top: 20px" type="button" class="btn btn-dark me-md-2" onclick="Login()">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                                         class="bi bi-box-arrow-left" viewBox="0 0 16 16">
                                         <path fill-rule="evenodd"
@@ -48,7 +48,7 @@
                                         <path fill-rule="evenodd"
                                             d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z" />
                                     </svg>
-                                </button>
+                                </button> -->
                             <!-- </a> -->
                         </li>
                     </ul>
@@ -175,7 +175,8 @@
                     </svg>
                 </button>
             </div>
-            <p id="text-acercade" *ngFor="let acerca_de of acerca_de">{{acerca_de.about}}</p>
+            <p id="text-acercade">{{miPortfolio.about}}</p>
+            <!-- <p id="text-acercade" *ngFor="let acerca_de of acerca_de">{{acerca_de.about}}</p> -->
         </div>
         <div>
             <input id="edit-acercade" type="text" oninput="myFunction2(this.value)" style="display:none">
@@ -269,12 +270,19 @@
                             experiencia</button>
                     </div>
                 </div>
-                <li *ngFor="let expe of experiencia">
+                <!-- <li *ngFor="let expe of experiencia">
                     <a href={{expe.url}} target="_blank">
                         <img [src]="expe.img">
                     </a>
                     <h4>{{expe.company}}</h4>
                     <h5>{{expe.position}}</h5>
+                </li> -->
+                <li *ngFor="let experience of experienciaList">
+                    <a href={{experience.url}} target="_blank">
+                        <img [src]="experience.img">
+                    </a>
+                    <h4>{{experience.company}}</h4>
+                    <h5>{{experience.position}}</h5>
                 </li>
             </ul>
         </div>
@@ -320,12 +328,19 @@
     <div class="container-fluid">
         <div id="informacion" class="col-8">
             <ul style="list-style: none">
-                <li *ngFor="let educ of educacion">
+                <!-- <li *ngFor="let educ of educacion">
                     <a href={{educ.url}} target="_blank">
                         <img [src]="educ.img" alt="Logo UBA">
                     </a>
                     <h4>{{educ.career}}</h4>
                     <h5>{{educ.school}}</h5>
+                </li> -->
+                <li *ngFor="let education of educacionList">
+                    <a href={{education.url}} target="_blank">
+                        <img [src]="education.img" alt="Logo UBA">
+                    </a>
+                    <h4>{{education.career}}</h4>
+                    <h5>{{education.school}}</h5>
                 </li>
             </ul>
         </div>
@@ -370,13 +385,21 @@
     <div class="container-fluid">
         <div id="informacion" class="col-8">
             <ul style="list-style: none">
-                <li *ngFor="let proyectos of proyectos">
+                <!-- <li *ngFor="let proyectos of proyectos">
                     <a href={{proyectos.url}} target="_blank">
                         <img [src]="proyectos.img"
                             alt="Logo Argentina Programa">
                     </a>
                     <h4>{{proyectos.name}}</h4>
                     <h5>{{proyectos.school}}</h5>
+                </li> -->
+                <li *ngFor="let projects of proyectosList">
+                    <a href={{projects.url}} target="_blank">
+                        <img [src]="projects.img"
+                            alt="Logo Argentina Programa">
+                    </a>
+                    <h4>{{projects.name}}</h4>
+                    <h5>{{projects.school}}</h5>
                 </li>
             </ul>
         </div>
@@ -420,13 +443,20 @@
     <div class="container-fluid">
         <div id="informacion" class="col-8">
             <ul style="list-style: none">
-                <li *ngFor="let certificaciones of certificaciones">
+                <!-- <li *ngFor="let certificaciones of certificaciones">
                     <a href={{certificaciones.url}} target="_blank">
                         <img [src]="certificaciones.img"
                             alt="Logo Mumuki">
                     </a>
                     <h4>{{certificaciones.title}}</h4>
                     <h5>{{certificaciones.school}}</h5>
+                </li> -->
+                <li *ngFor="let certifications of certificacionesList">
+                    <a href={{certifications.url}} target="_blank">
+                        <img [src]="certifications.img">
+                    </a>
+                    <h4>{{certifications.title}}</h4>
+                    <h5>{{certifications.school}}</h5>
                 </li>
             </ul>
         </div>

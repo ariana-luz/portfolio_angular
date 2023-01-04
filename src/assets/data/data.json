@@ -1,7 +1,7 @@
 {
 	"fullname": "Ariana Osuna Vargas",
-	"backImage": "https://media-exp1.licdn.com/dms/image/C4D16AQFoUceXro0LAg/profile-displaybackgroundimage-shrink_350_1400/0/1614458133264?e=1672272000&v=beta&t=BghrKTyR38oJFgSB5kQTadvbDrGasV4vi4cTnEhLZ94",
-	"image": "https://media-exp1.licdn.com/dms/image/C4D03AQGprUkrN0t3lQ/profile-displayphoto-shrink_800_800/0/1660605594052?e=1669852800&v=beta&t=HIKzyoPlRqTejJFlIqQUACMZteZ-xOEA-PGYkjOCt3g",
+	"backImage": "https://media.licdn.com/dms/image/C4D16AQFoUceXro0LAg/profile-displaybackgroundimage-shrink_350_1400/0/1614458133264?e=1678320000&v=beta&t=Ja4yQXeKJ_93S--oKD2EO1GlZwBWSGnp3eAKYjg-Bjk",
+	"image": "https://media.licdn.com/dms/image/C4D03AQGprUkrN0t3lQ/profile-displayphoto-shrink_200_200/0/1660605594052?e=1678320000&v=beta&t=FF-bx98AvO1cDped5Gs4VIfXC06WrOYpu2T0C7hf8uc",
 	"position": "Editora",
 	"company": {
 		"name": "Penguin Random House",
@@ -15,8 +15,9 @@
 		"name": "Universidad de Buenos Aires",
 		"img": "https://media-exp1.licdn.com/dms/image/C4E0BAQF-QztqGXBokQ/company-logo_200_200/0/1519861386584?e=1672876800&v=beta&t=vXaH73PjY4NuyATDFWiIoCWitjLgHURAXm6FmhK-Rww",
 		"url": "https://www.uba.ar/#/"
-	},	
-	"experience": [{
+	},
+	"experience": [
+		{
 			"position": "Auxiliar de Producción de audiolibros",
 			"company": "Penguin Random House",
 			"url": "https://www.penguinlibros.com/ar/",
@@ -53,8 +54,9 @@
 			"timeElapsed": "2 años"
 		}
 	],
-	"education": [{
-		"id": 1,
+	"education": [
+		{
+			"id": 1,
 			"school": "Universidad de Buenos Aires",
 			"title": "Editora",
 			"img": "https://media-exp1.licdn.com/dms/image/C4E0BAQF-QztqGXBokQ/company-logo_200_200/0/1519861386584?e=1672876800&v=beta&t=vXaH73PjY4NuyATDFWiIoCWitjLgHURAXm6FmhK-Rww",
@@ -82,63 +84,71 @@
 			"end": "2017"
 		}
 	],
-
-	"projects": [{
-		"name": "Mi portfolio en Github",
-		"school": "Argentina Programa",
-		"date": "2022",
-		"img": "https://media-exp1.licdn.com/dms/image/C560BAQGv-Dd7A2pQ0g/company-logo_200_200/0/1646458288684?e=1672272000&v=beta&t=g9p4u_sLdDGy0XM4CvjlRcv4k9_b7g8WHOx_H9hQqj0",
-		"url": "https://github.com/ariana-luz/portfolio_angular"
-	}],
-	
-	"certifications": [{
+	"projects": [
+		{
+			"name": "Mi portfolio en Github",
+			"school": "Argentina Programa",
+			"date": "2022",
+			"img": "https://media.licdn.com/dms/image/C4E0BAQHhDPmHBm3pCg/company-logo_100_100/0/1563979482487?e=1680739200&v=beta&t=3calHWtCRfbGI17xPD-IC0IySO5-tcasmNp9yfc4k2Q",
+			"url": "https://github.com/ariana-luz/portfolio_angular"
+		}
+	],
+	"certifications": [
+		{
+			"title": "Skill Up de Angular",
+			"school": "Alkemy",
+			"img": "https://media.licdn.com/dms/image/C4D0BAQEQJ9t_6Hiokg/company-logo_200_200/0/1657041852417?e=1680739200&v=beta&t=EqxHQVrHqH_KtiPRXR1qP40bSkfCevzFla6lsIqvIFY",
+			"url": "https://drive.google.com/file/d/1s8ScXK4JPDKikyHTkai87YVa7qtHVq7G/view",
+			"date": "2021"
+		},
+		{
 			"title": "Certificación Sé programar",
 			"school": "Argentina Programa",
-			"img": "https://media-exp1.licdn.com/dms/image/C4E0BAQHhDPmHBm3pCg/company-logo_200_200/0/1563979482487?e=1672272000&v=beta&t=AjQ8cf2nfnQcMpyma__tvFdElYBhNi73fv92wfVprxI",
+			"img": "https://media.licdn.com/dms/image/C4E0BAQHhDPmHBm3pCg/company-logo_100_100/0/1563979482487?e=1680739200&v=beta&t=3calHWtCRfbGI17xPD-IC0IySO5-tcasmNp9yfc4k2Q",
 			"url": "https://mumuki.io/argentina-programa/certificates/verify/6E_Y_glgWr8dh6J3",
 			"date": "2021"
 		},
 		{
 			"title": "Social Media Ads",
 			"school": "Educación IT",
-			"img": "https://media-exp1.licdn.com/dms/image/C4D0BAQHWD6W0Nbd8sw/company-logo_200_200/0/1647956251519?e=1672272000&v=beta&t=Q6h1i51woseFhkGjEgWyL13NCzjLEmr9FLTUnoLoIPY",
-			"url": "https://certificados.educacionit.com/certificados/cache/Ariana-Osuna-Vargas-1A572531/1A51564",
+			"img": "https://media.licdn.com/dms/image/C4D0BAQHWD6W0Nbd8sw/company-logo_100_100/0/1647956251519?e=1680739200&v=beta&t=e1HyaWTsQ5XD1BZIlvSLL1ZOfBTPBn4_uCRET9A8kc4",
 			"date": "2021"
 		},
 		{
 			"title": "Front End Web Developer",
 			"school": "Educación IT",
-			"img": "https://media-exp1.licdn.com/dms/image/C4D0BAQHWD6W0Nbd8sw/company-logo_200_200/0/1647956251519?e=1672272000&v=beta&t=Q6h1i51woseFhkGjEgWyL13NCzjLEmr9FLTUnoLoIPY",
+			"img": "https://media.licdn.com/dms/image/C4D0BAQHWD6W0Nbd8sw/company-logo_100_100/0/1647956251519?e=1680739200&v=beta&t=e1HyaWTsQ5XD1BZIlvSLL1ZOfBTPBn4_uCRET9A8kc4",
 			"url": "https://certificados.educacionit.com/api/Ariana-Osuna-Vargas-1A572531/1A52288",
 			"date": "2021"
 		},
 		{
 			"title": "Introducción al Desarrollo Web I",
 			"school": "Google Actívate",
-			"img": "https://media-exp1.licdn.com/dms/image/C4D0BAQGlBBVXCfSVag/company-logo_200_200/0/1570003065196?e=1672272000&v=beta&t=b9CnPs8WK5kf54feyIlJYT05T3g4D6jNNXd9SUhMD1o",
+			"img": "https://media.licdn.com/dms/image/C4D0BAQGlBBVXCfSVag/company-logo_100_100/0/1570003065196?e=1680739200&v=beta&t=JE0hec4ke53S59xmTgbqZFYbLMHI_t-nibPyVpnF49Q",
 			"url": "https://learndigital.withgoogle.com/link/1nur091p2ww",
 			"id": "ID de la credencial: 44M QFS WGW",
-			"date":"2020"
+			"date": "2020"
 		},
 		{
 			"title": "Programación Web",
 			"school": "Educación IT",
-			"img": "https://media-exp1.licdn.com/dms/image/C4D0BAQHWD6W0Nbd8sw/company-logo_200_200/0/1647956251519?e=1672272000&v=beta&t=Q6h1i51woseFhkGjEgWyL13NCzjLEmr9FLTUnoLoIPY",
+			"img": "https://media.licdn.com/dms/image/C4D0BAQHWD6W0Nbd8sw/company-logo_100_100/0/1647956251519?e=1680739200&v=beta&t=e1HyaWTsQ5XD1BZIlvSLL1ZOfBTPBn4_uCRET9A8kc4",
 			"url": "https://api.educacionit.com/pdf/certificados/Ariana-Osuna-Vargas-572531/51818",
 			"date": "2020"
 		},
 		{
 			"title": "Javascript",
 			"school": "Educación IT",
-			"img": "https://media-exp1.licdn.com/dms/image/C4D0BAQHWD6W0Nbd8sw/company-logo_200_200/0/1647956251519?e=1672272000&v=beta&t=Q6h1i51woseFhkGjEgWyL13NCzjLEmr9FLTUnoLoIPY",
+			"img": "https://media.licdn.com/dms/image/C4D0BAQHWD6W0Nbd8sw/company-logo_100_100/0/1647956251519?e=1680739200&v=beta&t=e1HyaWTsQ5XD1BZIlvSLL1ZOfBTPBn4_uCRET9A8kc4",
 			"url": "https://certificados.educacionit.com/api/Ariana-Osuna-Vargas-1A572531/1A51328",
 			"date": "2020"
 		},
 		{
 			"title": "User Experience (UX)",
 			"school": "Educación IT",
-			"img": "https://media-exp1.licdn.com/dms/image/C4D0BAQHWD6W0Nbd8sw/company-logo_200_200/0/1647956251519?e=1672272000&v=beta&t=Q6h1i51woseFhkGjEgWyL13NCzjLEmr9FLTUnoLoIPY",
+			"img": "https://media.licdn.com/dms/image/C4D0BAQHWD6W0Nbd8sw/company-logo_100_100/0/1647956251519?e=1680739200&v=beta&t=e1HyaWTsQ5XD1BZIlvSLL1ZOfBTPBn4_uCRET9A8kc4",
 			"url": "https://certificados.educacionit.com/api/Ariana-Osuna-Vargas-1A572531/1A51318",
 			"date": "2020"
-		}]
+		}
+	]
 }
